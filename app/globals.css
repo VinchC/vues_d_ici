@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .section {
+    @apply flex max-md:flex-col items-center gap-4 mt-4;
+  }
+  .portrait {
+    @apply flex w-56 h-auto max-w-xs max-md:w-40 rounded-full styledBorder;
+  }
+  .card {
+    @apply w-full p-4 flex-col gap-2 styledBorder;
+  }
+  .accent {
+    @apply bg-accent/30 hover:bg-accent/50 transition-colors text-accent-foreground;
+  }
+  .logo {
+    @apply inline-flex items-center gap-2 hover:bg-accent/40 transition-colors h-24 p-1 rounded-lg;
+  }
+  .buttonSmall {
+    @apply flex justify-center items-center text-sm size-8 p-0 styledBorder hover:accent ;
+  }
+  .buttonLarge {
+    @apply flex justify-center items-center text-sm h-8 w-24 p-0 styledBorder hover:accent;
+  }
+  .styledBorder {
+    @apply border-black border-2 rounded-lg;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+:root {
+  --primary: 141 92% 65%;
+  --secondary: 360 20% 57%;
+  --tertiary: 192 53% 60%;
+  --fourth: 56 78% 68%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: var(--primary);
+  --foreground: 0 0% 0%;
+  --card: var(--secondary);
+  --card-foreground: 0 0% 0%;
+  --accent: 216 13% 30%;
+  --accent-foreground: 216 13% 90%;
+}
+
+.light {
+  --background: var(--tertiary);
+  --foreground: 0 0% 0%;
+  --card: var(--fourth);
+  --card-foreground: 0 0% 0%;
+  --accent: 1 00% 30%;
+  --accent-foreground: 1 00% 00%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+
+/* --------------------Accessibility-------------------- */
+/* allows to "hide" the skip navigation link which is still accessible by any screen reader */
+#skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* displays the skip navigation link when it is focused */
+#skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
