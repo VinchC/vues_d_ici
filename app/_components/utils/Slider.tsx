@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import { Section } from "./utils/Section";
-import distribution from "../../public/images/distribution_jeunes_ambitieux.jpg";
-import { GithubIcon } from "./icons/GithubIcon";
+import { Section } from "./Section";
+import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
+import playground from "@/public/images/inauguration_playground_2.jpg";
+import station from "@/public/images/station_serge_gainsbourg.jpg";
 import Link from "next/link";
-import { Code } from "./utils/Code";
 
 export const Slider = () => {
   return (
@@ -22,7 +22,7 @@ export const Slider = () => {
                 data-carousel-item
               >
                 <img
-                  src="/docs/images/carousel/carousel-1.svg"
+                  src={distribution.src}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -32,7 +32,7 @@ export const Slider = () => {
                 data-carousel-item
               >
                 <img
-                  src="/docs/images/carousel/carousel-2.svg"
+                  src={playground.src}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -42,7 +42,7 @@ export const Slider = () => {
                 data-carousel-item
               >
                 <img
-                  src="/docs/images/carousel/carousel-3.svg"
+                  src={station.src}
                   className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                   alt="..."
                 />
@@ -69,20 +69,6 @@ export const Slider = () => {
                 aria-current="false"
                 aria-label="Slide 3"
                 data-carousel-slide-to="2"
-              ></button>
-              <button
-                type="button"
-                className="w-3 h-3 rounded-full"
-                aria-current="false"
-                aria-label="Slide 4"
-                data-carousel-slide-to="3"
-              ></button>
-              <button
-                type="button"
-                className="w-3 h-3 rounded-full"
-                aria-current="false"
-                aria-label="Slide 5"
-                data-carousel-slide-to="4"
               ></button>
             </div>
             <button

@@ -1,8 +1,8 @@
 "use client";
 import { buttonVariants, cn } from "@/components/ui/button";
 import "./styles/not-found.css";
-
 import Link from "next/link";
+
 export default function Error() {
   return (
     <>
@@ -13,17 +13,16 @@ export default function Error() {
         <span>S</span>
       </section>
       <div className="text-center flex flex-col gap-4">
-        <p>Something went wrong!</p>
-        <p>There was an error processing your request.</p>
+        <p>Une erreur s&apos;est produite.</p>
         <div className="link-container">
           <Link
             href="/"
             className={cn(
               buttonVariants({ variant: "outline" }),
-              "more-link bg-foreground text-background border border-border"
+              "more-link"
             )}
           >
-            Back to homepage
+            Retour à l&apos;accueil
           </Link>
         </div>
       </div>

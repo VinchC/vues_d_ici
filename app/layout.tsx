@@ -15,15 +15,10 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const AnekTelugu = Anek_Telugu({
-  subsets: ["latin"],
-  variable: "--font-caption",
-});
-
 export const metadata: Metadata = {
-  title: "Vincent Cantonnet - Full Stack Developper",
+  title: "Vues d'ici - Journal de quartier",
   description:
-    "Trained in PHP, React, SQL and GraphQL, on the lookout for new professional opportunities.",
+    "L'actu locale par et pour les habitants. Vues d'ici est un journal et indépendant soutenu par les habitants des quartiers Belleville, Jourdain, Butts-Chaumonts et Place des Fêtes à Paris.",
 };
 
 export default function RootLayout({
@@ -32,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="fr" className="h-full" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${AnekTelugu.variable} h-full bg-background text-foreground`}
+        className={`${geistSans.variable} ${geistMono.variable} h-full`}
       >
         <Providers>{children}</Providers>
       </body>

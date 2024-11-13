@@ -8,7 +8,7 @@ import ThemeSwitch from "./utils/ThemeSwitch";
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { NAVBAR_LINKS } from "../data/data";
-import { NavLink } from "./NavLink";
+import { NavLink } from "./utils/NavLink";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +17,7 @@ export const Header = () => {
     <header className="fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background">
       <Section>
         <nav className="flex">
-          <h1 className="text-lg font-bold text-card-foreground">
-            Vues d&apos;ici logo
-          </h1>
+          <h1 className="text-lg font-bold text-background">Vues d&apos;ici - Journal de quartier</h1>
           <div className="flex-1" />
 
           <div className="flex-col">
@@ -29,7 +27,7 @@ export const Header = () => {
                   isOpen ? setIsOpen(false) : setIsOpen(true);
                 }}
                 type="button"
-                className="text-black"
+                className="text-background"
               >
                 <Menu />
               </button>

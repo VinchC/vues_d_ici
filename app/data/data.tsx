@@ -2,8 +2,8 @@ import { NavLinkProps } from "../types";
 
 export const NAVBAR_LINKS: NavLinkProps[] = [
   {
-    href: "/journaux",
-    title: "Les journaux",
+    href: "/artickes",
+    title: "Articles",
   },
   {
     href: "/nous-trouver",
@@ -11,18 +11,10 @@ export const NAVBAR_LINKS: NavLinkProps[] = [
   },
   {
     href: "/contact",
-    title: "Contact",
+    title: "Nous contacter",
   },
   {
-    href: "/charte",
-    title: "Charte",
-  },
-  {
-    href: "/adhesion",
-    title: "Adhérez !",
-  },
-  {
-    href: "/faire-un-don",
-    title: "Faire un don",
+    href: "/assiciation",
+    title: "L'association",
   },
 ];
