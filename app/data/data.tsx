@@ -1,4 +1,9 @@
-import { CarouselSliderProps, CategoryProps, NavLinkProps } from "../types";
+import {
+  CarouselButtonProps,
+  CarouselSliderProps,
+  CategoryProps,
+  NavLinkProps,
+} from "../types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
 import playground from "@/public/images/inauguration_playground_2.jpg";
@@ -53,5 +58,21 @@ export const CAROUSEL_SLIDERS: CarouselSliderProps[] = [
     path_d: "M8.25 4.5l7.5 7.5-7.5 7.5",
     title: "Next",
     className: "right-0",
+  },
+];
+
+export const CAROUSEL_BUTTONS: CarouselButtonProps[] = [
+  {
+    data_twe_slide_to: "0",
+    aria_label: "Slide 1",
+    data_twe_carousel_active: "data-twe-carousel-active",
+  },
+  {
+    data_twe_slide_to: "1",
+    aria_label: "Slide 2",
+  },
+  {
+    data_twe_slide_to: "2",
+    aria_label: "Slide 3",
   },
 ];

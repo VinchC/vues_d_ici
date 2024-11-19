@@ -19,5 +19,5 @@ export type CarouselSliderProps = {
 export type CarouselButtonProps = {
   data_twe_slide_to: string,
   aria_label: string,
-  data_twe_carousel_active: boolean,
+  data_twe_carousel_active?: string | undefined,
 };

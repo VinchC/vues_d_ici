@@ -3,11 +3,11 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
-import { CAROUSEL_PICTURES, CAROUSEL_SLIDERS } from "@/app/data/data";
+import { CAROUSEL_BUTTONS, CAROUSEL_PICTURES, CAROUSEL_SLIDERS } from "@/app/data/data";
 import { useEffect } from "react";
 import Link from "next/link";
 import CarouselButton from "./CarouselButton";
-import CarouselSlider from "./CarouselButton";
+import CarouselSlider from "./CarouselSlider";
 
 const Carousel = () => {
   useEffect(() => {
@@ -29,29 +29,9 @@ const Carousel = () => {
         className="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
         data-twe-carousel-indicators
       >
-        <button
-          type="button"
-          data-twe-target="#carouselExampleCaptions"
-          data-twe-slide-to="0"
-          data-twe-carousel-active
-          className="carouselButton duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)]"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-twe-target="#carouselExampleCaptions"
-          data-twe-slide-to="1"
-          className="carouselButton duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)]"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-twe-target="#carouselExampleCaptions"
-          data-twe-slide-to="2"
-          className="carouselButton duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)]"
-          aria-label="Slide 3"
-        ></button>
+      {CAROUSEL_BUTTONS.map((button, index) => (
+        <CarouselButton key={index} {...button} />
+      ))}
       </div>
 
       <div className="relative w-full overflow-hidden max-h-44 max-w-auto">

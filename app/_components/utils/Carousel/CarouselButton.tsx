@@ -1,31 +1,17 @@
-export default function CarouselSlider(props: {
-  data_twe_slide: string;
-  path_d: string;
-  title: string;
-  className: string;
+export default function CarouselButton(props: {
+  data_twe_slide_to: string;
+  aria_label: string;
+  data_twe_carousel_active?: string | undefined
 }) {
   return (
     <button
-      className={`carouselSlider ease-[cubic-bezier(0.25,0.1,0.25,1.0)] ${props.className}`}
-      type="button"
-      data-twe-target="#carouselExampleCaptions"
-      data-twe-slide={props.data_twe_slide}
-    >
-      <span className="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="h-6 w-6"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d={props.path_d} />
-        </svg>
-      </span>
-      <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-        {props.title}
-      </span>
-    </button>
+    type="button"
+    data-twe-target="#carouselExampleCaptions"
+    data-twe-slide-to={props.data_twe_slide_to}
+    data-twe-carousel-active={props.data_twe_carousel_active}
+    className="carouselButton duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)]"
+    aria-current="true"
+    aria-label={props.aria_label}
+  ></button>
   );
 }
