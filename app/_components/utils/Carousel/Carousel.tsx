@@ -3,11 +3,15 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
-import { CAROUSEL_BUTTONS, CAROUSEL_PICTURES, CAROUSEL_SLIDERS } from "@/app/data/data";
+import {
+  CAROUSEL_BUTTONS,
+  CAROUSEL_PICTURES,
+  CAROUSEL_SLIDERS,
+} from "@/app/data/data";
 import { useEffect } from "react";
-import Link from "next/link";
 import CarouselButton from "./CarouselButton";
 import CarouselSlider from "./CarouselSlider";
+import CarouselCard from "./CarouselCard";
 
 const Carousel = () => {
   useEffect(() => {
@@ -29,55 +33,15 @@ const Carousel = () => {
         className="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
         data-twe-carousel-indicators
       >
-      {CAROUSEL_BUTTONS.map((button, index) => (
-        <CarouselButton key={index} {...button} />
-      ))}
+        {CAROUSEL_BUTTONS.map((button, index) => (
+          <CarouselButton key={index} {...button} />
+        ))}
       </div>
 
       <div className="relative w-full overflow-hidden max-h-44 max-w-auto">
-        <div
-          className="relative -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-twe-carousel-active
-          data-twe-carousel-item
-          style={{ backfaceVisibility: "hidden" }}
-        >
-          <img
-            src={CAROUSEL_PICTURES[0].picture}
-            className="block object-fill max-h-44 max-w-92"
-            alt={CAROUSEL_PICTURES[0].alt}
-          />
-          <div className="carouselText">
-            <p className="text-lg">{CAROUSEL_PICTURES[0].title}</p>
-          </div>
-        </div>
-        <div
-          className="relative -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-twe-carousel-item
-          style={{ backfaceVisibility: "hidden" }}
-        >
-          <img
-            src={CAROUSEL_PICTURES[1].picture}
-            className="block object-fill max-h-44 max-w-92"
-            alt={CAROUSEL_PICTURES[1].alt}
-          />
-          <div className="carouselText">
-            <p className="text-lg">{CAROUSEL_PICTURES[1].title}</p>
-          </div>
-        </div>
-        <div
-          className="relative -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-twe-carousel-item
-          style={{ backfaceVisibility: "hidden" }}
-        >
-          <img
-            src={CAROUSEL_PICTURES[2].picture}
-            className="block object-fill max-h-44 max-w-92"
-            alt={CAROUSEL_PICTURES[2].alt}
-          />
-          <div className="carouselText">
-            <p className="text-lg">{CAROUSEL_PICTURES[2].title}</p>
-          </div>
-        </div>
+        {CAROUSEL_PICTURES.map((pic, index) => (
+          <CarouselCard key={index} {...pic} />
+        ))}
       </div>
       {CAROUSEL_SLIDERS.map((slider, index) => (
         <CarouselSlider key={index} {...slider} />

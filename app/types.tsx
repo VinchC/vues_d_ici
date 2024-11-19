@@ -7,6 +7,7 @@ export type CategoryProps = {
   title: string;
   picture: string;
   alt: string;
+  data_twe_carousel_active?: string | undefined,
 };
 
 export type CarouselSliderProps = {
@@ -19,5 +20,12 @@ export type CarouselSliderProps = {
 export type CarouselButtonProps = {
   data_twe_slide_to: string,
   aria_label: string,
+  data_twe_carousel_active?: string | undefined,
+};
+
+export type CarouselPictureProps = {
+  picture: string,
+  alt: string,
+  title: string,
   data_twe_carousel_active?: string | undefined,
 };

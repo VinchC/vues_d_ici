@@ -6,7 +6,7 @@ export default function CarouselSlider(props: {
 }) {
   return (
     <button
-      className={`carouselSlider ease-[cubic-bezier(0.25,0.1,0.25,1.0)] ${props.className}`}
+      className={`carouselSlider ${props.className}`}
       type="button"
       data-twe-target="#carouselExampleCaptions"
       data-twe-slide={props.data_twe_slide}

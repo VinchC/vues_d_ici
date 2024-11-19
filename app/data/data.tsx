@@ -33,6 +33,7 @@ export const CAROUSEL_PICTURES: CategoryProps[] = [
     picture: distribution.src,
     alt: "Photo représentant une distribution",
     title: "Distribution jeunes ambitieux",
+    data_twe_carousel_active: "data-twe-carousel-active",
   },
   {
     picture: playground.src,

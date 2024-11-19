@@ -11,8 +11,8 @@ export const Hero = () => {
             L&apos;actu locale par et pour les habitants
           </h2>
           <p>
-            Vues d&apos;ici est un journal et indépendant soutenu par les
-            habitants des quartiers Belleville, Jourdain, Butts-Chaumonts et
+            Vues d&apos;ici est un journal gratuit et indépendant soutenu par les
+            habitants des quartiers Belleville, Jourdain, Buttes-Chaumonts et
             Place des Fêtes à Paris.
           </p>
         </div>
