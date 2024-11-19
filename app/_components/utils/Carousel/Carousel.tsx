@@ -61,7 +61,7 @@ const Carousel = () => {
 
       <div className="relative w-full overflow-hidden object-contain max-h-44 max-w-auto">
         <div
-          className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-twe-carousel-active
           data-twe-carousel-item
           style={{ backfaceVisibility: "hidden" }}
@@ -76,7 +76,7 @@ const Carousel = () => {
           </div>
         </div>
         <div
-          className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-twe-carousel-item
           style={{ backfaceVisibility: "hidden" }}
         >
@@ -90,7 +90,7 @@ const Carousel = () => {
           </div>
         </div>
         <div
-          className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-twe-carousel-item
           style={{ backfaceVisibility: "hidden" }}
         >
