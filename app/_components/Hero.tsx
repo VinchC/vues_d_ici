@@ -16,7 +16,7 @@ export const Hero = () => {
             Place des Fêtes à Paris.
           </p>
         </div>
-        <div className="flex-[2] flex justify-around items-center max-md:m-auto ml-auto max-h-48 max-w-88">
+        <div className="flex-[2] flex justify-around items-center max-md:m-auto ml-auto">
           <Carousel />
         </div>
       </Section>
