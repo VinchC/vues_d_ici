@@ -19,6 +19,15 @@ body {
   .accent {
     @apply bg-accent/20 hover:bg-accent/30 transition-colors;
   }
+  .carouselButton {
+    @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity motion-reduce:transition-none
+  }
+  .carouselElement {
+    @apply relative float-left -mr-[100%] w-full transition-transform ease-in-out motion-reduce:transition-none
+  }
+  .carouselText {
+    @apply absolute inset-x-[15%] top-1 hidden text-center text-black md:block
+  }
   .buttonSmall {
     @apply flex justify-center items-center text-sm p-0 text-background styledBorder hover:accent size-8;
   }

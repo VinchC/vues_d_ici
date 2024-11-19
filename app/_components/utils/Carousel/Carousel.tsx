@@ -2,12 +2,11 @@
 
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import { Section } from "./Section";
-import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
-import playground from "@/public/images/inauguration_playground_2.jpg";
-import station from "@/public/images/station_serge_gainsbourg.jpg";
-import Link from "next/link";
+
+import { CAROUSEL_PICTURES } from "@/app/data/data";
 import { useEffect } from "react";
+import Link from "next/link";
+import CarouselCard from "./CarouselCard";
 
 const Carousel = () => {
   useEffect(() => {
@@ -34,7 +33,7 @@ const Carousel = () => {
           data-twe-target="#carouselExampleCaptions"
           data-twe-slide-to="0"
           data-twe-carousel-active
-          className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          className="carouselButton duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)]"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -42,19 +41,25 @@ const Carousel = () => {
           type="button"
           data-twe-target="#carouselExampleCaptions"
           data-twe-slide-to="1"
-          className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          className="carouselButton duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)]"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
           data-twe-target="#carouselExampleCaptions"
           data-twe-slide-to="2"
-          className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          className="carouselButton duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)]"
           aria-label="Slide 3"
         ></button>
       </div>
 
-      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+      {/* <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        {CAROUSEL_PICTURES.map((skill, index) => (
+          <CarouselCard key={index} {...skill} />
+        ))}
+      </div> */}
+
+      <div className="relative w-full overflow-hidden object-contain max-h-44 max-w-auto">
         <div
           className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-twe-carousel-active
@@ -62,12 +67,12 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-            className="block w-full"
-            alt="..."
+            src={CAROUSEL_PICTURES[0].picture}
+            className="block w-full max-lg:max-h-44 max-lg:max-w-auto"
+            alt={CAROUSEL_PICTURES[0].alt}
           />
-          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <p className="text-lg">catégorie</p>
+          <div className="carouselText">
+            <p className="text-lg">{CAROUSEL_PICTURES[0].title}</p>
           </div>
         </div>
         <div
@@ -76,13 +81,12 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
-            className="block w-full"
-            alt="..."
+            src={CAROUSEL_PICTURES[1].picture}
+            className="block w-full max-lg:max-h-44 max-lg:max-w-auto"
+            alt={CAROUSEL_PICTURES[1].alt}
           />
-          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 className="text-xl">Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+          <div className="carouselText">
+            <p className="text-lg">{CAROUSEL_PICTURES[1].title}</p>
           </div>
         </div>
         <div
@@ -91,13 +95,12 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-            className="block w-full"
-            alt="..."
+            src={CAROUSEL_PICTURES[2].picture}
+            className="block w-full max-lg:max-h-44 max-lg:max-w-auto"
+            alt={CAROUSEL_PICTURES[2].alt}
           />
-          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 className="text-xl">Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+          <div className="carouselText">
+            <p className="text-lg text-black">{CAROUSEL_PICTURES[2].title}</p>
           </div>
         </div>
       </div>
