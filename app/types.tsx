@@ -9,9 +9,15 @@ export type CategoryProps = {
   alt: string;
 };
 
-export type CarouselButtonProps = {
+export type CarouselSliderProps = {
   data_twe_slide: string,
   path_d: string,
   title: string,
   className: string,
+};
+
+export type CarouselButtonProps = {
+  data_twe_slide_to: string,
+  aria_label: string,
+  data_twe_carousel_active: boolean,
 };

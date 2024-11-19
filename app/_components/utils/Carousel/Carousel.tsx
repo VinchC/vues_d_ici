@@ -3,10 +3,11 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
-import { CAROUSEL_BUTTONS, CAROUSEL_PICTURES } from "@/app/data/data";
+import { CAROUSEL_PICTURES, CAROUSEL_SLIDERS } from "@/app/data/data";
 import { useEffect } from "react";
 import Link from "next/link";
 import CarouselButton from "./CarouselButton";
+import CarouselSlider from "./CarouselButton";
 
 const Carousel = () => {
   useEffect(() => {
@@ -94,12 +95,12 @@ const Carousel = () => {
             alt={CAROUSEL_PICTURES[2].alt}
           />
           <div className="carouselText">
-            <p className="text-lg text-black">{CAROUSEL_PICTURES[2].title}</p>
+            <p className="text-lg">{CAROUSEL_PICTURES[2].title}</p>
           </div>
         </div>
       </div>
-      {CAROUSEL_BUTTONS.map((button, index) => (
-        <CarouselButton key={index} {...button} />
+      {CAROUSEL_SLIDERS.map((slider, index) => (
+        <CarouselSlider key={index} {...slider} />
       ))}
     </div>
   );

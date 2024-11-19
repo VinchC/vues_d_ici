@@ -1,4 +1,4 @@
-import { CarouselButtonProps, CategoryProps, NavLinkProps } from "../types";
+import { CarouselSliderProps, CategoryProps, NavLinkProps } from "../types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
 import playground from "@/public/images/inauguration_playground_2.jpg";
@@ -41,7 +41,7 @@ export const CAROUSEL_PICTURES: CategoryProps[] = [
   },
 ];
 
-export const CAROUSEL_BUTTONS: CarouselButtonProps[] = [
+export const CAROUSEL_SLIDERS: CarouselSliderProps[] = [
   {
     data_twe_slide: "prev",
     path_d: "M15.75 19.5L8.25 12l7.5-7.5",
