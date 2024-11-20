@@ -26,7 +26,7 @@ body {
     @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-60 transition-opacity motion-reduce:transition-none;
   }
   .carouselCard {
-    @apply relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
+    @apply relative hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
   }
   .carouselText {
     @apply absolute inset-x-[15%] top-1 hidden text-center text-black md:block;

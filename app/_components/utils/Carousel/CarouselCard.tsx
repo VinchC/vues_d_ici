@@ -7,7 +7,7 @@ export default function CarouselCard(props: {
 }) {
   return (
     <div
-      className="carouselCard h-auto w-92"
+      className="carouselCard"
       data-twe-carousel-fade
       data-twe-carousel-item
       data-twe-carousel-active={props.data_twe_carousel_active}
@@ -15,7 +15,7 @@ export default function CarouselCard(props: {
     >
       <img
         src={props.picture}
-        className="block object-cover max-lg:h-40 max-lg:w-92"
+        className="block object-cover max-lg:object-fill max-lg:h-40 max-lg:w-auto"
         alt={props.alt}
       />
       <div className="carouselText">
