@@ -8,7 +8,7 @@ export default function CarouselSlider(props: {
     <button
       className={`carouselSlider ${props.className}`}
       type="button"
-      data-twe-target="#carouselExampleCaptions"
+      data-twe-target="#carouselExampleCrossfade"
       data-twe-slide={props.data_twe_slide}
     >
       <span className="inline-block h-8 w-8">
