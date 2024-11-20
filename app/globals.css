@@ -20,13 +20,13 @@ body {
     @apply bg-accent/20 hover:bg-accent/30 transition-colors;
   }
   .carouselSlider {
-    @apply absolute bottom-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none;
+    @apply absolute bottom-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-90 transition-opacity hover:text-black hover:no-underline hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none;
   }
   .carouselButton {
-    @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity motion-reduce:transition-none;
+    @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-60 transition-opacity motion-reduce:transition-none;
   }
   .carouselElement {
-    @apply relative float-left -mr-[100%] w-full transition-transform ease-in-out motion-reduce:transition-none;
+    @apply relative float-left -mr-[100%] hidden w-full transition-transform transitionDuration ease-in-out motion-reduce:transition-none;
   }
   .carouselText {
     @apply absolute inset-x-[15%] top-1 hidden text-center text-black md:block;
@@ -39,6 +39,9 @@ body {
   }
   .styledBorder {
     @apply border-background border-2 rounded-lg;
+  }
+  .transitionDuration {
+    @apply duration-1000;
   }
 }
 

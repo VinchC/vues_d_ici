@@ -38,7 +38,7 @@ const Carousel = () => {
         ))}
       </div>
 
-      <div className="relative w-full overflow-hidden max-h-44 max-w-auto">
+      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] h-44 w-92">
         {CAROUSEL_PICTURES.map((pic, index) => (
           <CarouselCard key={index} {...pic} />
         ))}

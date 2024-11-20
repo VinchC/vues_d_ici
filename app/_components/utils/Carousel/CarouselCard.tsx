@@ -7,14 +7,14 @@ export default function CarouselCard(props: {
 }) {
   return (
     <div
-      className="relative -mr-[100%] hidden w-full transition-transform duration-600 ease-in-out motion-reduce:transition-none"
+      className="carouselElement"
       data-twe-carousel-item
       data-twe-carousel-active={props.data_twe_carousel_active}
       style={{ backfaceVisibility: "hidden" }}
     >
       <img
         src={props.picture}
-        className="block object-fill max-h-44 max-w-92"
+        className="block object-cover"
         alt={props.alt}
       />
       <div className="carouselText">

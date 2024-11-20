@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
 
