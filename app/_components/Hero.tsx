@@ -5,7 +5,7 @@ import Carousel from "./utils/Carousel/Carousel";
 export const Hero = () => {
   return (
     <>
-      <Section className="flex max-md:flex-col items-center justify-center gap-4 mt-4 max-lg:mt-20">
+      <Section className="section justify-center max-lg:mt-20">
         <div className="flex-[3] flex flex-col gap-2 w-full p-4">
           <h2 className="text-4xl max-md:text-3xl font-semibold">
             L&apos;actu locale <span className="italic font-normal">par</span>{" "}
@@ -17,12 +17,12 @@ export const Hero = () => {
             et Place des Fêtes à Paris.
           </p>
           <div className="flex justify-evenly">
-            <Link href="/articles" className="button">
+            <Link href="/articles" className="mediumButton">
               Trouver une édition papier
             </Link>
             <Link
               href="/association-vues-d-ici#nous-soutenir"
-              className="button"
+              className="mediumButton"
             >
               Nous soutenir
             </Link>
@@ -31,9 +31,6 @@ export const Hero = () => {
         <div className="flex-[2] flex justify-around items-center max-md:m-auto ml-auto">
           <Carousel />
         </div>
-      </Section>
-      <Section>
-        
       </Section>
     </>
   );

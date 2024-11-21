@@ -29,3 +29,11 @@ export type CarouselPictureProps = {
   title: string,
   data_twe_carousel_active?: string | undefined,
 };
+
+export type ArticleHomePageProps = {
+  picture: string,
+  alt: string,
+  title: string,
+  chapeau: string,
+  href: string;
+};

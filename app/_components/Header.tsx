@@ -14,7 +14,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background">
+    <header className="header">
       <Section>
         <nav className="flex">
           <h1 className="text-lg max-xs:text-sm font-bold text-background">

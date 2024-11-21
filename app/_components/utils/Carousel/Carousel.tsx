@@ -25,7 +25,7 @@ const Carousel = () => {
   return (
     <div
       id="carouselExampleCrossfade"
-      className="relative"
+      className="relative z-0"
       data-twe-carousel-init
       data-twe-ride="carousel"
     >

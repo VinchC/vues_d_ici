@@ -1,4 +1,5 @@
 import {
+  ArticleHomePageProps,
   CarouselButtonProps,
   CarouselSliderProps,
   CategoryProps,
@@ -104,3 +105,42 @@ export const CAROUSEL_BUTTONS: CarouselButtonProps[] = [
     aria_label: "Slide 6",
   },
 ];
+
+export const ARTICLES_HOMEPAGE: ArticleHomePageProps[] = [
+  {
+    picture: distribution.src,
+    alt: "Article à propos de ...",
+    title: "Titre de l'article 1",
+    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  },
+  {
+    picture: distribution.src,
+    alt: "Article à propos de ...",
+    title: "Titre de l'article 2",
+    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  },
+  {
+    picture: distribution.src,
+    alt: "Article à propos de ...",
+    title: "Titre de l'article 3",
+    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  },
+  {
+    picture: distribution.src,
+    alt: "Article à propos de ...",
+    title: "Titre de l'article 4",
+    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  },
+  {
+    picture: distribution.src,
+    alt: "Article à propos de ...",
+    title: "Titre de l'article 5",
+    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  },
+  {
+    picture: distribution.src,
+    alt: "Article à propos de ...",
+    title: "Titre de l'article 6",
+    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  }
+]
