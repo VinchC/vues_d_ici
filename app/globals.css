@@ -22,7 +22,7 @@ body {
     @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-16 max-lg:gap-8;
   }
   .articleCard {
-    @apply flex flex-col gap-4 shadow-md rounded-lg bg-background text-foreground;
+    @apply flex flex-col gap-4 shadow-md rounded-lg bg-background text-foreground w-72 h-80 max-sm:w-80;
   }
 
   /* ---------------------------------Carousel--------------------------------- */
