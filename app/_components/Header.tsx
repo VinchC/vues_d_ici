@@ -17,7 +17,9 @@ export const Header = () => {
     <header className="fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background">
       <Section>
         <nav className="flex">
-          <h1 className="text-lg font-bold text-background">Vues d&apos;ici - Journal de quartier</h1>
+          <h1 className="text-lg max-xs:text-sm font-bold text-background">
+            Vues d&apos;ici - Journal de quartier
+          </h1>
           <div className="flex-1" />
 
           <div className="flex-col">
@@ -49,7 +51,7 @@ export const Header = () => {
                 ))}
                 <button
                   aria-label="switch the mode from dark to light (os preferences by default)"
-                  className="buttonSmall max-md:buttonLarge"
+                  className="navLinkSmall max-md:navLinkLarge"
                 >
                   <ThemeSwitch />
                 </button>

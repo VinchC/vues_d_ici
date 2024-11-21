@@ -10,44 +10,59 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* ---------------------------------Container--------------------------------- */
   .section {
     @apply flex max-md:flex-col items-center gap-4 mt-4;
   }
   .card {
     @apply w-full p-4 flex-col gap-2 styledBorder;
   }
-  .accent {
-    @apply bg-accent/20 hover:bg-accent/30 transition-colors;
-  }
+
+  /* ---------------------------------Carousel--------------------------------- */
   .carouselSlider {
     @apply absolute bottom-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-90 transition-opacity hover:text-black hover:no-underline hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none;
   }
   .carouselButton {
-    @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-60 transition-opacity motion-reduce:transition-none;
+    @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-red-900 bg-clip-padding p-0 -indent-[999px] opacity-40 transition-opacity motion-reduce:transition-none;
   }
   .carouselCard {
-    @apply relative hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
+    @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
   }
   .carouselText {
     @apply absolute inset-x-[15%] top-1 hidden text-center text-black md:block;
   }
-  .buttonSmall {
-    @apply flex justify-center items-center text-sm p-0 text-background styledBorder hover:accent size-8;
+  .transitionDuration {
+    @apply duration-500;
   }
-  .buttonLarge {
-    @apply flex justify-center items-center text-sm p-0 text-background styledBorder hover:accent h-8 w-28;
+  
+  /* ---------------------------------Texts--------------------------------- */
+  .paragraph {
+    @apply text-base max-md:text-sm;
+  }
+
+  /* ---------------------------------CTA--------------------------------- */
+  .navLinkSmall {
+    @apply flex justify-center items-center text-sm p-0 text-center bg-foreground hover:bg-background/30 text-background styledBorder size-8;
+  }
+  .navLinkLarge {
+    @apply flex justify-center items-center text-xs p-0 text-center bg-foreground hover:bg-background/30 text-background styledBorder h-8 w-24;
+  }
+  .button {
+    @apply flex justify-center items-center text-xs p-0 text-center text-black bg-primary styledBorder hover:bg-primary/30 h-8 w-24;
+  }
+  /* ---------------------------------Misc--------------------------------- */
+  .accent {
+    @apply bg-accent/20 hover:bg-accent/50 transition-colors;
   }
   .styledBorder {
     @apply border-background border-2 rounded-lg;
-  }
-  .transitionDuration {
-    @apply duration-1000;
   }
 }
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    /* @apply bg-background text-foreground; */
   }
 }
 
