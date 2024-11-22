@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /* eslint-disable @next/next/no-img-element */
 export default function CarouselCard(props: {
   picture: string;
@@ -13,14 +15,16 @@ export default function CarouselCard(props: {
       data-twe-carousel-active={props.data_twe_carousel_active}
       style={{ backfaceVisibility: "hidden" }}
     >
-      <img
-        src={props.picture}
-        className="block object-cover max-lg:object-fill max-lg:h-40 max-lg:w-auto"
-        alt={props.alt}
-      />
-      <div className="carouselText">
-        <p className="text-lg">{props.title}</p>
-      </div>
+      <Link href="/articles?category=">
+        <img
+          src={props.picture}
+          className="block object-cover max-lg:object-fill max-lg:h-40 max-lg:w-auto"
+          alt={props.alt}
+        />
+        <div className="carouselText">
+          <p className="text-lg">{props.title}</p>
+        </div>
+      </Link>
     </div>
   );
 }
