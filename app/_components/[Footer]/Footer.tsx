@@ -1,13 +1,18 @@
+"use client";
+
+import { useEffect } from "react";
 import { FOOTER_LINKS, SOCIAL_MEDIA } from "../../data/data";
 import { FooterIcon } from "./FooterIcon";
 import { FooterLink } from "./FooterLink";
 
 const Footer = () => {
+  useEffect(() => {
   const init = async () => {
     const { Input, Ripple, initTWE } = await import("tw-elements");
     initTWE({ Input, Ripple });
   };
   init();
+}, []);
 
   return (
     <footer className="footer">

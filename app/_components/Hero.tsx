@@ -1,6 +1,6 @@
 import { Section } from "./utils/Section";
 import Link from "next/link";
-import Carousel from "./utils/Carousel/Carousel";
+import Carousel from "./[Carousel]/Carousel";
 
 export const Hero = () => {
   return (
