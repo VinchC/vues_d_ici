@@ -54,6 +54,9 @@ body {
   .navLinkLarge {
     @apply flex justify-center items-center text-xs p-0 text-center bg-foreground hover:bg-background/30 text-background border-background styledBorder h-8 w-24;
   }
+  .footerLink {
+    @apply flex justify-center items-center text-xs p-0 text-center bg-tertiary hover:bg-background/30 text-black border-background styledBorder h-8 w-32;
+  }
   .button {
     @apply flex justify-center items-center text-xs p-0 text-center text-black bg-primary styledBorder hover:bg-primary/30 h-8;
   }
@@ -87,7 +90,7 @@ body {
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground mb-4;
   }
 }
 

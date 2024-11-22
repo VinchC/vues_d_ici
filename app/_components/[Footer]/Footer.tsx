@@ -1,8 +1,6 @@
-import { SOCIAL_MEDIA } from "../../data/data";
-import { GoogleIcon } from "../icons/GoogleIcon";
-import { HelloAssoIcon } from "../icons/HelloAssoIcon";
-import { InstagramIcon } from "../icons/InstagramIcon";
+import { FOOTER_LINKS, SOCIAL_MEDIA } from "../../data/data";
 import { FooterIcon } from "./FooterIcon";
+import { FooterLink } from "./FooterLink";
 
 const Footer = () => {
   const init = async () => {
@@ -62,11 +60,10 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4">
-          <a href="#!">Link 1</a>
-          <a href="#!">Link 2</a>
-          <a href="#!">Link 3</a>
-          <a href="#!">Link 4</a>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
+          {FOOTER_LINKS.map((link, index) => (
+            <FooterLink key={index} {...link} />
+          ))}
         </div>
       </div>
 

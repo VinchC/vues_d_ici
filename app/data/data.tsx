@@ -74,8 +74,12 @@ export const FOOTER_LINKS: NavLinkProps[] = [
     title: "Nous soutenir",
   },
   {
+    href: "/contact",
+    title: "Nous contacter",
+  },
+  {
     href: "/association-vues-d-ici",
-    title: "L'association",
+    title: "Qui sommes-nous ?",
   },
 ];
 
