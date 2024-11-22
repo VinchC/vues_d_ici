@@ -5,6 +5,7 @@ import {
   CategoryProps,
   NavLinkProps,
   MediaProps,
+  DistributionPlacesProps,
 } from "../types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
@@ -13,6 +14,66 @@ import { FacebookIcon } from "../_components/icons/FacebookIcon";
 import { GoogleIcon } from "../_components/icons/GoogleIcon";
 import { InstagramIcon } from "../_components/icons/InstagramIcon";
 import { HelloAssoIcon } from "../_components/icons/HelloAssoIcon";
+
+export const MAIN_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
+  {
+    business_name: "Centre Paris Aim'Clavel",
+    address: "24 bis rue Clavel",
+    city: "Paris",
+    district: "19ème",
+  },
+  {
+    business_name: "Centre Paris Aim'Clavel",
+    address: "24 bis rue Clavel",
+    city: "Paris",
+    district: "19ème",
+  },
+  {
+    business_name: "Centre Paris Aim'Clavel",
+    address: "24 bis rue Clavel",
+    city: "Paris",
+    district: "19ème",
+  },
+  {
+    business_name: "Centre Paris Aim'Clavel",
+    address: "24 bis rue Clavel",
+    city: "Paris",
+    district: "19ème",
+  },
+  {
+    business_name: "Centre Paris Aim'Clavel",
+    address: "24 bis rue Clavel",
+    city: "Paris",
+    district: "19ème",
+  },
+  {
+    business_name: "Centre Paris Aim'Clavel",
+    address: "24 bis rue Clavel",
+    city: "Paris",
+    district: "19ème",
+  },
+];
+
+export const SECONDARY_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
+  {
+    business_name: "Bibliothèque de la Place des Fêtes",
+  },
+  {
+    business_name: "La Fabrik coopérative",
+  },
+  {
+    business_name: "La Maison de la Place des Fêtes",
+  },
+  {
+    business_name: "Le DOC",
+  },
+  {
+    business_name: "La librairie Boréalia",
+  },
+  {
+    business_name: "Le foyer Pauline Roland",
+  },
+];
 
 export const SOCIAL_MEDIA: MediaProps[] = [
   {
@@ -89,31 +150,37 @@ export const CAROUSEL_CATEGORIES: CategoryProps[] = [
     alt: "Image représentant la catégorie Mémoire & patrimoine",
     title: "Mémoire & patrimoine",
     data_twe_carousel_active: "data-twe-carousel-active",
+    href: "/articles?category=",
   },
   {
     picture: station.src,
     alt: "Image représentant la catégorie Art & culture",
     title: "Art & culture",
+    href: "/articles?category=",
   },
   {
     picture: distribution.src,
     alt: "Image représentant la catégorie Nature & Ecologie",
     title: "Nature & Ecologie",
+    href: "/articles?category=",
   },
   {
     picture: station.src,
     alt: "Image représentant la catégorie Activités",
     title: "Activités",
+    href: "/articles?category=",
   },
   {
     picture: distribution.src,
     alt: "Image représentant la catégorie Editions complètes",
     title: "Editions complètes",
+    href: "/articles?category=",
   },
   {
     picture: station.src,
     alt: "Image représentant la catégorie Actu du journal",
     title: "Actu du journal",
+    href: "/articles?category=",
   },
 ];
 

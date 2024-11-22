@@ -15,9 +15,9 @@ export const Header = () => {
 
   return (
     <header className="header">
-      <Section>
+      <Section className="max-lg:max-w-4xl max-sm:max-w-2xl">
         <nav className="flex">
-          <h1 className="text-lg max-xs:text-sm font-bold text-background">
+          <h1 className="text-lg max-sm:leading-6 max-sm:text-sm font-bold text-background">
             Vues d&apos;ici - Journal de quartier
           </h1>
           <div className="flex-1" />

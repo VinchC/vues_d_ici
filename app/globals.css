@@ -36,10 +36,10 @@ body {
     @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
   }
   .carouselText {
-    @apply absolute inset-x-[15%] top-1 hidden text-center text-black md:block;
+    @apply absolute inset-x-[15%] top-1 hidden paragraph text-center bg-tertiary hover:bg-background/30 text-black border-background styledBorder w-60 text-black xs:block;
   }
   .transitionDuration {
-    @apply duration-500;
+    @apply duration-1000;
   }
 
   /* ---------------------------------Texts--------------------------------- */
@@ -78,7 +78,7 @@ body {
   /* ---------------------------------Misc--------------------------------- */
 
   .header {
-    @apply fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background z-50
+    @apply fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background z-50;
   }
   .accent {
     @apply bg-accent/20 hover:bg-accent/50 transition-colors;

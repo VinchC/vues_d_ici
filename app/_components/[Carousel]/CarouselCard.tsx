@@ -22,7 +22,7 @@ export default function CarouselCard(props: {
           alt={props.alt}
         />
         <div className="carouselText">
-          <p className="text-lg">{props.title}</p>
+          <p className="paragraph">{props.title}</p>
         </div>
       </Link>
     </div>

@@ -3,6 +3,7 @@
 import { Spacing } from "./_components/utils/Spacing";
 import { Hero } from "./_components/Hero";
 import { LastArticles } from "./_components/[Articles]/LastArticles";
+import { WhereToFind } from "./_components/WhereToFind";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
         <Hero />
         <Spacing size="sm" />
         <LastArticles />
+        <Spacing size="sm" />
+        <WhereToFind />
         <Spacing size="sm" />
       </main>
     </>

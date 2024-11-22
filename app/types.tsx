@@ -4,6 +4,13 @@ export type MediaProps = {
   label: string;
 }
 
+export type DistributionPlacesProps = {
+  business_name: string;
+  address?: string;
+  city?: string;
+  district?: string;
+}
+
 export type NavLinkProps = {
   href: string;
   title: string;
@@ -14,6 +21,7 @@ export type CategoryProps = {
   picture: string;
   alt: string;
   data_twe_carousel_active?: string | undefined,
+  href: string;
 };
 
 export type CarouselSliderProps = {

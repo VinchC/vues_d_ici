@@ -9,7 +9,7 @@ export const LastArticles = () => {
     <>
       <Section className="section justify-center">
         <Card className="p-4 gap-2">
-          <h2 className="text-lg mb-4">Nos derniers articles</h2>
+          <h2 className="text-2xl mb-4">Nos derniers articles</h2>
           <div className="lastArticleGrid">
             {ARTICLES_HOMEPAGE.map((article, index) => (
               <ArticleCard key={index} {...article} />
