@@ -55,13 +55,22 @@ body {
     @apply flex justify-center items-center text-xs p-0 text-center bg-foreground hover:bg-background/30 text-background border-background styledBorder h-8 w-24;
   }
   .button {
-    @apply flex justify-center items-center text-xs p-0 text-center text-black bg-primary styledBorder hover:bg-primary/30 h-8 mt-4;
+    @apply flex justify-center items-center text-xs p-0 text-center text-black bg-primary styledBorder hover:bg-primary/30 h-8;
   }
   .mediumButton {
     @apply button w-24 border-foreground;
   }
   .largeButton {
     @apply button w-32;
+  }
+  /* ---------------------------------Footer--------------------------------- */
+
+  .footer {
+    @apply flex flex-col items-center bg-foreground text-background text-center mt-8;
+  }
+
+  .footerButton {
+    @apply rounded-full bg-background text-foreground p-3 uppercase leading-normal shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1
   }
   /* ---------------------------------Misc--------------------------------- */
 

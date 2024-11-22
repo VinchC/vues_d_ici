@@ -15,7 +15,7 @@ export const LastArticles = () => {
               <ArticleCard key={index} {...article} />
             ))}
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mt-4">
             <Link href="/articles" className="largeButton">
               Voir tous les articles
             </Link>
