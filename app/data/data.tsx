@@ -108,39 +108,63 @@ export const CAROUSEL_BUTTONS: CarouselButtonProps[] = [
 
 export const ARTICLES_HOMEPAGE: ArticleHomePageProps[] = [
   {
+    id: 1,
     picture: distribution.src,
     alt: "Article à propos de ...",
-    title: "Titre de l'article 1",
-    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    title: "Titre de l'article",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
+    createdAt: "01/11/2024",
   },
   {
-    picture: distribution.src,
+    id: 2,
+    picture: station.src,
     alt: "Article à propos de ...",
-    title: "Titre de l'article 2",
-    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    title: "Titre de l'article",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
+    createdAt: "01/11/2024",
   },
   {
+    id: 3,
     picture: distribution.src,
     alt: "Article à propos de ...",
-    title: "Titre de l'article 3",
-    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    title: "Titre de l'article",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
+    createdAt: "01/11/2024",
   },
   {
-    picture: distribution.src,
+    id: 4,
+    picture: station.src,
     alt: "Article à propos de ...",
-    title: "Titre de l'article 4",
-    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    title: "Titre de l'article",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
+    createdAt: "01/11/2024",
   },
   {
+    id: 5,
     picture: distribution.src,
     alt: "Article à propos de ...",
-    title: "Titre de l'article 5",
-    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    title: "Titre de l'article",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
+    createdAt: "01/11/2024",
   },
   {
-    picture: distribution.src,
+    id: 6,
+    picture: station.src,
     alt: "Article à propos de ...",
-    title: "Titre de l'article 6",
-    chapeau: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-  }
-]
+    title: "Titre de l'article",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
+    createdAt: "01/11/2024",
+  },
+];

@@ -31,9 +31,12 @@ export type CarouselPictureProps = {
 };
 
 export type ArticleHomePageProps = {
+  id: number;
   picture: string,
   alt: string,
   title: string,
   chapeau: string,
-  href: string;
+  text?: string;
+  createdAt: string;
 };
+

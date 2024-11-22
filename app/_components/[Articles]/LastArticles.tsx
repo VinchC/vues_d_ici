@@ -16,7 +16,7 @@ export const LastArticles = () => {
             ))}
           </div>
           <div className="flex justify-center items-center">
-            <Link href="/article/:id" className="largeButton">
+            <Link href="/articles" className="largeButton">
               Voir tous les articles
             </Link>
           </div>

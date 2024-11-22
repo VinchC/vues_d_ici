@@ -3,11 +3,13 @@
 import Link from "next/link";
 
 export const ArticleCard = (props: {
+  id: number;
   picture: string;
   alt: string;
   title: string;
   chapeau: string;
-  href: string;
+  text?: string;
+  createdAt: string;
 }) => {
   return (
     <div className="articleCard w-80 h-160">
@@ -15,7 +17,7 @@ export const ArticleCard = (props: {
       <div className="p-4">
         <h3 className="text-base font-semibold">{props.title}</h3>
         <p className="text-sm mt-2 line-clamp-3">{props.chapeau}</p>
-        <Link href="/article/:id" className="mediumButton mt-4">
+        <Link href={`/article/${props.id}`} className="mediumButton mt-4">
           Lire l&apos;article
         </Link>
       </div>
