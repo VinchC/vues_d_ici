@@ -1,3 +1,9 @@
+export type MediaProps = {
+  href: string;
+  icon: any;
+  label: string;
+}
+
 export type NavLinkProps = {
   href: string;
   title: string;

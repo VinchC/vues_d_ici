@@ -4,10 +4,32 @@ import {
   CarouselSliderProps,
   CategoryProps,
   NavLinkProps,
+  MediaProps,
 } from "../types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
 import station from "@/public/images/station_serge_gainsbourg.jpg";
+import { FacebookIcon } from "../_components/icons/FacebookIcon";
+import { GoogleIcon } from "../_components/icons/GoogleIcon";
+import { InstagramIcon } from "../_components/icons/InstagramIcon";
+
+export const SOCIAL_MEDIA: MediaProps[] = [
+  {
+    href: "https://www.facebook.com/Journal.Vuesdici",
+    icon: <FacebookIcon />,
+    label: "Lien vers la page Facebook de Vues d'ici.",
+  },
+  {
+    href: "https://www.google.fr/maps/place/Pl.+des+F%C3%AAtes,+75019+Paris/@48.8771718,2.3915075,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66dbfb478cde1:0x8bc8dca1c6be6a3d!8m2!3d48.8771683!4d2.3940824!16s%2Fg%2F122czk_y?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D",
+    icon: <GoogleIcon />,
+    label: "Lien vers la page Google Maps centrée sur la Place des Fêtes.",
+  },
+  {
+    href: "https://www.instagram.com/vues_d_ici_/",
+    icon: <InstagramIcon />,
+    label: "Lien vers la page Instagram de Vues d'ici.",
+  },
+];
 
 export const NAVBAR_LINKS: NavLinkProps[] = [
   {
