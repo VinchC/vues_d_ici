@@ -19,7 +19,7 @@ body {
     @apply w-full p-4 flex-col gap-2 styledBorder;
   }
   .lastArticleGrid {
-    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-16 max-lg:gap-8;
+    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8;
   }
   .articleCard {
     @apply flex flex-col gap-4 shadow-md rounded-lg bg-background text-foreground w-72 h-80 max-sm:w-80;
@@ -49,16 +49,16 @@ body {
 
   /* ---------------------------------CTA--------------------------------- */
   .navLinkSmall {
-    @apply flex justify-center items-center text-sm p-0 text-center bg-foreground hover:bg-background/30 text-background styledBorder size-8;
+    @apply flex justify-center items-center text-sm p-0 text-center bg-foreground hover:bg-background/30 text-background styledBorder border-background size-8;
   }
   .navLinkLarge {
-    @apply flex justify-center items-center text-xs p-0 text-center bg-foreground hover:bg-background/30 text-background styledBorder h-8 w-24;
+    @apply flex justify-center items-center text-xs p-0 text-center bg-foreground hover:bg-background/30 text-background border-background styledBorder h-8 w-24;
   }
   .button {
     @apply flex justify-center items-center text-xs p-0 text-center text-black bg-primary styledBorder hover:bg-primary/30 h-8 mt-4;
   }
   .mediumButton {
-    @apply button w-24;
+    @apply button w-24 border-foreground;
   }
   .largeButton {
     @apply button w-32;
@@ -72,7 +72,7 @@ body {
     @apply bg-accent/20 hover:bg-accent/50 transition-colors;
   }
   .styledBorder {
-    @apply border-background border-2 rounded-lg;
+    @apply border-2 rounded-lg;
   }
 }
 

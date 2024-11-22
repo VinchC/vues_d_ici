@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Providers from "./providers";
+import SkipLink from "./_components/utils/SkipLink";
+import { Header } from "./_components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,10 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="h-full" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} h-full`}
-      >
-        <Providers>{children}</Providers>
+      <body className={`${geistSans.variable} ${geistMono.variable} h-full`}>
+        <SkipLink />
+
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
