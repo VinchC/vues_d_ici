@@ -58,10 +58,10 @@ body {
     @apply flex justify-center items-center text-xs p-0 text-center text-black bg-primary styledBorder hover:bg-primary/30 h-8;
   }
   .mediumButton {
-    @apply button w-24 border-foreground;
+    @apply button w-24 border-background;
   }
   .largeButton {
-    @apply button w-32;
+    @apply button w-32 border-background;
   }
   /* ---------------------------------Footer--------------------------------- */
 

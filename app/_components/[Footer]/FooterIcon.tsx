@@ -7,17 +7,17 @@ export const FooterIcon = (props: {
   label: string;
 }) => {
   return (
-    <div>
+    <div className="footerButton">
       <a
         target="_blank"
         href={props.href}
         type="button"
-        className="footerButton"
+        className=""
         data-twe-ripple-init
         data-twe-ripple-color="light"
       >
         <AccessibleIcon label={props.label}>
-        {props.icon}
+          <span className="max-auto [&>svg]:h-5 [&>svg]:w-5">{props.icon}</span>
         </AccessibleIcon>
       </a>
     </div>

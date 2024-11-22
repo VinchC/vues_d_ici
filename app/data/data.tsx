@@ -12,6 +12,7 @@ import station from "@/public/images/station_serge_gainsbourg.jpg";
 import { FacebookIcon } from "../_components/icons/FacebookIcon";
 import { GoogleIcon } from "../_components/icons/GoogleIcon";
 import { InstagramIcon } from "../_components/icons/InstagramIcon";
+import { HelloAssoIcon } from "../_components/icons/HelloAssoIcon";
 
 export const SOCIAL_MEDIA: MediaProps[] = [
   {
@@ -29,6 +30,11 @@ export const SOCIAL_MEDIA: MediaProps[] = [
     icon: <InstagramIcon />,
     label: "Lien vers la page Instagram de Vues d'ici.",
   },
+  {
+    href: "https://www.helloasso.com/",
+    icon: <HelloAssoIcon />,
+    label: "Lien vers la page du site Hello Asso.",
+  },
 ];
 
 export const NAVBAR_LINKS: NavLinkProps[] = [
@@ -43,6 +49,29 @@ export const NAVBAR_LINKS: NavLinkProps[] = [
   {
     href: "/contact",
     title: "Nous contacter",
+  },
+  {
+    href: "/association-vues-d-ici",
+    title: "L'association",
+  },
+];
+
+export const FOOTER_LINKS: NavLinkProps[] = [
+  {
+    href: "/articles",
+    title: "Articles",
+  },
+  {
+    href: "/#nous-trouver",
+    title: "Nous trouver",
+  },
+  {
+    href: "/association-vues-d-ici#nous-rejoindre",
+    title: "Nous rejoindre",
+  },
+  {
+    href: "/association-vues-d-ici#nous-soutenir",
+    title: "Nous soutenir",
   },
   {
     href: "/association-vues-d-ici",

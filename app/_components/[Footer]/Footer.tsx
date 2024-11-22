@@ -1,5 +1,6 @@
 import { SOCIAL_MEDIA } from "../../data/data";
 import { GoogleIcon } from "../icons/GoogleIcon";
+import { HelloAssoIcon } from "../icons/HelloAssoIcon";
 import { InstagramIcon } from "../icons/InstagramIcon";
 import { FooterIcon } from "./FooterIcon";
 
@@ -13,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container px-6 pt-6">
-        <div className="mb-6 flex justify-center space-x-2">
+        <div className="mb-6 flex justify-center space-x-8">
           {SOCIAL_MEDIA.map((media, index) => (
             <FooterIcon key={index} {...media} />
           ))}
