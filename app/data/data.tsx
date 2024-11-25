@@ -1,11 +1,11 @@
 import {
-  ArticleHomePageProps,
   CarouselButtonProps,
   CarouselSliderProps,
   CategoryProps,
   NavLinkProps,
   MediaProps,
   DistributionPlacesProps,
+  ArticleProps,
 } from "../types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
@@ -228,7 +228,7 @@ export const CAROUSEL_BUTTONS: CarouselButtonProps[] = [
   },
 ];
 
-export const ARTICLES_HOMEPAGE: ArticleHomePageProps[] = [
+export const ARTICLES: ArticleProps[] = [
   {
     id: 1,
     picture: distribution.src,

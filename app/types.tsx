@@ -44,7 +44,8 @@ export type CarouselPictureProps = {
   data_twe_carousel_active?: string | undefined,
 };
 
-export type ArticleHomePageProps = {
+export type ArticleProps = {
+  filter(title: string): unknown;
   id: number;
   picture: string,
   alt: string,
