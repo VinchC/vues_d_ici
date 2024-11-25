@@ -45,7 +45,6 @@ export type CarouselPictureProps = {
 };
 
 export type ArticleProps = {
-  filter(title: string): unknown;
   id: number;
   picture: string,
   alt: string,
