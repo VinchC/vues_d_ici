@@ -11,9 +11,15 @@ export const LastArticles = () => {
         <Card className="p-4 gap-2">
           <h2 className="text-2xl mb-4">Nos derniers articles</h2>
           <div className="lastArticleGrid">
-            {ARTICLES_HOMEPAGE.map((article, index) => (
-              <ArticleCard key={index} {...article} />
-            ))}
+            {ARTICLES_HOMEPAGE.sort(
+              (a, b) =>
+                new Date(b.createdAt).getTime() -
+                new Date(a.createdAt).getTime()
+            )
+              .slice(0, 6)
+              .map((article, index) => (
+                <ArticleCard key={index} {...article} />
+              ))}
           </div>
           <div className="flex justify-center items-center mt-4">
             <Link href="/articles" className="largeButton">
