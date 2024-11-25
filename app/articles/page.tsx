@@ -9,15 +9,19 @@ export default function ArticlePage() {
   return (
     <>
       <Spacing size="sm" />
-      <Section className="section justify-center mt-8">
+      <Section className="section justify-center mt-8 max-lg:mt-20">
         <Card className="p-4 gap-2">
           <h2 className="text-2xl mb-4">Nos articles et journaux</h2>
           <p className="paragraph">Filtrer par catégorie</p>
-          <div className="flex justify-between mt-4">
+          <div className="footerAndCategories">
             {CATEGORIES.map((category, index) => (
-            <Link key={index} href={`/articles?category=${category.title}`} className="categoryLink">
-              {category.title}
-            </Link>
+              <Link
+                key={index}
+                href={`/articles?category=${category.title}`}
+                className="categoryLink"
+              >
+                {category.title}
+              </Link>
             ))}
           </div>
           <div className="lastArticleGrid">

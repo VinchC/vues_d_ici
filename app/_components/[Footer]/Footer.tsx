@@ -65,7 +65,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
+        <div className="footerAndCategories">
           {FOOTER_LINKS.map((link, index) => (
             <FooterLink key={index} {...link} />
           ))}
