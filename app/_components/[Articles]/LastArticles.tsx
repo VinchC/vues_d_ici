@@ -5,7 +5,6 @@ import { ArticleCard } from "./ArticleCard";
 import Link from "next/link";
 
 export const LastArticles = () => {
-  console.log(ARTICLES);
   return (
     <>
       <Section className="section justify-center">
