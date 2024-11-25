@@ -20,11 +20,11 @@ export const BackTheJournal = () => {
           <div className="flex justify-evenly">
             <Link
               href="/association-vues-d-ici#nous-soutenir"
-              className="mediumButton"
+              className="largeButton"
             >
               Nous soutenir
             </Link>
-            <Link href="/contact" className="mediumButton">
+            <Link href="/contact" className="largeButton">
               Nous contacter
             </Link>
           </div>

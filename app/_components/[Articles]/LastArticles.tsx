@@ -5,6 +5,7 @@ import { ArticleCard } from "./ArticleCard";
 import Link from "next/link";
 
 export const LastArticles = () => {
+  console.log(ARTICLES);
   return (
     <>
       <Section className="section justify-center">
@@ -12,9 +13,9 @@ export const LastArticles = () => {
           <h2 className="text-2xl mb-4">Nos derniers articles</h2>
           <div className="lastArticleGrid">
             {ARTICLES.sort(
-              (a, b) =>
-                new Date(b.createdAt).getTime() -
-                new Date(a.createdAt).getTime()
+              (a, b) => b.id - a.id
+              // new Date(b.createdAt).getTime() -
+              // new Date(a.createdAt).getTime()
             )
               .slice(0, 6)
               .map((article, index) => (

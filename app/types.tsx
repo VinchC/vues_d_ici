@@ -17,6 +17,7 @@ export type NavLinkProps = {
 };
 
 export type CategoryProps = {
+  id: number,
   title: string;
   picture: string;
   alt: string;
@@ -52,5 +53,6 @@ export type ArticleProps = {
   chapeau: string,
   text?: string;
   createdAt: string;
+  categoryId: number,
 };
 

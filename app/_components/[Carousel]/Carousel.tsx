@@ -4,7 +4,7 @@
 
 import {
   CAROUSEL_BUTTONS,
-  CAROUSEL_CATEGORIES,
+  CATEGORIES,
   CAROUSEL_SLIDERS,
 } from "@/app/data/data";
 import { useEffect } from "react";
@@ -38,7 +38,7 @@ const Carousel = () => {
       </div>
 
       <div className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] h-40 w-92">
-        {CAROUSEL_CATEGORIES.map((category, index) => (
+        {CATEGORIES.map((category, index) => (
           <CarouselCard key={index} {...category} />
         ))}
       </div>

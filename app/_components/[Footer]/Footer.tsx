@@ -46,7 +46,7 @@ const Footer = () => {
               <div className="mb-6 md:me-auto">
                 <button
                   type="submit"
-                  className="largeButton"
+                  className="categoryLink"
                   data-twe-ripple-init
                   data-twe-ripple-color="light"
                 >

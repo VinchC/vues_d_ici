@@ -19,7 +19,7 @@ body {
     @apply w-full p-4 flex-col gap-2 styledBorder;
   }
   .lastArticleGrid {
-    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8;
+    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 mt-8;
   }
   .articleCard {
     @apply flex flex-col gap-4 shadow-md rounded-lg bg-background text-foreground w-72 h-80 max-sm:w-80;
@@ -36,7 +36,7 @@ body {
     @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
   }
   .carouselText {
-    @apply absolute inset-x-[15%] top-1 hidden paragraph text-center bg-tertiary hover:bg-background/30 text-black border-background styledBorder w-60 text-black xs:block;
+    @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-background/30 text-black border-background styledBorder w-60 text-black xs:block;
   }
   .transitionDuration {
     @apply duration-1000;
@@ -48,20 +48,27 @@ body {
   }
 
   /* ---------------------------------CTA--------------------------------- */
+
+  .navLink {
+    @apply flex justify-center items-center p-0 text-center styledBorder;
+  }
   .navLinkSmall {
-    @apply flex justify-center items-center text-sm p-0 text-center bg-foreground hover:bg-background/30 text-background styledBorder border-background size-8;
+    @apply navLink bg-foreground hover:bg-foreground/30 text-background text-sm size-8 border-background;
   }
   .navLinkLarge {
-    @apply flex justify-center items-center text-xs p-0 text-center bg-foreground hover:bg-background/30 text-background border-background styledBorder h-8 w-24;
+    @apply navLink bg-foreground hover:bg-background/30 text-background text-xs h-8 w-24 border-background;
   }
   .footerLink {
-    @apply flex justify-center items-center text-xs p-0 text-center bg-tertiary hover:bg-background/30 text-black border-background styledBorder h-8 w-32;
+    @apply navLink bg-tertiary hover:bg-tertiary/60 text-black text-xs h-8 w-32 border-background;
+  }
+  .categoryLink {
+    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32 border-background;
   }
   .button {
-    @apply flex justify-center items-center text-xs p-0 text-center text-black bg-primary styledBorder hover:bg-primary/30 h-8;
+    @apply navLink bg-primary hover:bg-primary/60 text-black text-xs h-8;
   }
   .mediumButton {
-    @apply button w-24 border-background;
+    @apply button w-24 border-foreground;
   }
   .largeButton {
     @apply button w-32 border-background;
