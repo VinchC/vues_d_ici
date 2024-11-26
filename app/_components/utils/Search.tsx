@@ -8,7 +8,7 @@ const Search = ({
   handleSearchUpdate: any;
 }) => {
   return (
-    <div className="relative w-36 paragraph">
+    <div className="relative w-72 paragraph">
       <input
         type="search"
         name="search"
@@ -18,7 +18,7 @@ const Search = ({
       />
       <button type="submit" className="absolute right-0 top-0 mt-1 mr-2">
         <svg
-          className="h-6 w-6 fill-current"
+          className="h-6 w-6 fill-black"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
         >

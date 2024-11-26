@@ -8,6 +8,7 @@ import { Spacing } from "../_components/utils/Spacing";
 import Link from "next/link";
 import { useState } from "react";
 import Search from "../_components/utils/Search";
+import { Metadata } from "next";
 
 export default function ArticlePage() {
   const [search, setSearch] = useState("");

@@ -18,7 +18,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Vues d'ici - Journal de quartier",
+  title: {
+    template: "Vues d'ici | %s",
+    default: "Vues d'ici - Journal de quartier",
+  },
   description:
     "L'actu locale par et pour les habitants. Vues d'ici est un journal et indépendant soutenu par les habitants des quartiers Belleville, Jourdain, Butts-Chaumonts et Place des Fêtes à Paris.",
 };
