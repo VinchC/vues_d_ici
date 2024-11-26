@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Card } from "@/components/ui/card";
 
 export const ArticleComponent = (props: {
@@ -11,13 +12,22 @@ export const ArticleComponent = (props: {
   categoryId: number;
   newspaperId: number;
 }) => {
+  console.log(props);
+
   return (
     <>
-      <Card className="p-4 gap-2">
-        <h2 className="text-2xl mb-4">Titre de l&apos;article</h2>
-        <p className="paragraph">Rechercher le contenu d&apos;un article</p>
-        <button className="categoryLink">{props.categoryId}</button>
-      </Card>
+      <div className="flex flex-col">
+        <Card className="p-4 gap-2 w-full rounded-b-none">
+          <h2 className="text-3xl font-bold mb-4">{props.title}</h2>
+          <p className="categoryLink">{props.categoryId}</p>
+          <p className="text-xs italic mt-4">Publié le {props.createdAt}</p>
+        </Card>
+        <img src={props.picture} alt={props.alt} className="m-0 w-full" />
+        <Card className="p-4 gap-2 w-full rounded-t-none">
+        <p className="chapeau">{props.chapeau}</p>
+        <article className="textArticle">{props.text}</article>
+        </Card>
+      </div>
     </>
   );
 };

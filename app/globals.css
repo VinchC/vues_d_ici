@@ -44,7 +44,15 @@ body {
 
   /* ---------------------------------Texts--------------------------------- */
   .paragraph {
-    @apply text-base max-md:text-sm mt-4;
+    @apply max-md:text-sm max-sm:text-xs mt-4;
+  }
+
+  .chapeau {
+    @apply text-xl max-lg:text-lg max-sm:text-sm mt-4 mx-24 max-lg:mx-12 max-md:mx-6;
+  }
+  
+  .textArticle {
+    @apply paragraph whitespace-pre-line leading-7 mx-24 max-lg:mx-12 max-md:mx-6;
   }
 
   /* ---------------------------------CTA--------------------------------- */
