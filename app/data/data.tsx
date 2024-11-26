@@ -245,6 +245,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "01/11/2024",
     categoryId: 1,
+    newspaperId: 1,
   },
   {
     id: 2,
@@ -256,6 +257,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "02/11/2024",
     categoryId: 2,
+    newspaperId: 2,
   },
   {
     id: 3,
@@ -267,6 +269,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "03/11/2024",
     categoryId: 3,
+    newspaperId: 3,
   },
   {
     id: 4,
@@ -278,6 +281,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "04/11/2024",
     categoryId: 4,
+    newspaperId: 4,
   },
   {
     id: 5,
@@ -289,6 +293,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "05/11/2024",
     categoryId: 5,
+    newspaperId: 5,
   },
   {
     id: 6,
@@ -300,6 +305,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "06/11/2024",
     categoryId: 6,
+    newspaperId: 6,
   },
   {
     id: 7,
@@ -311,6 +317,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "07/11/2024",
     categoryId: 1,
+    newspaperId: 7,
   },
   {
     id: 8,
@@ -322,6 +329,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "08/11/2024",
     categoryId: 2,
+    newspaperId: 8,
   },
   {
     id: 9,
@@ -333,6 +341,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "09/11/2024",
     categoryId: 3,
+    newspaperId: 9,
   },
   {
     id: 10,
@@ -344,6 +353,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "10/11/2024",
     categoryId: 4,
+    newspaperId: 10,
   },
   {
     id: 11,
@@ -355,6 +365,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "11/11/2024",
     categoryId: 5,
+    newspaperId: 11,
   },
   {
     id: 12,
@@ -366,6 +377,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "12/11/2024",
     categoryId: 6,
+    newspaperId: 12,
   },
   {
     id: 13,
@@ -377,6 +389,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "13/11/2024",
     categoryId: 1,
+    newspaperId: 13,
   },
   {
     id: 14,
@@ -388,6 +401,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "14/11/2024",
     categoryId: 2,
+    newspaperId: 14,
   },
   {
     id: 15,
@@ -399,6 +413,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem pops ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "15/11/2024",
     categoryId: 3,
+    newspaperId: 15,
   },
   {
     id: 16,
@@ -410,6 +425,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "16/11/2024",
     categoryId: 4,
+    newspaperId: 16,
   },
   {
     id: 17,
@@ -421,6 +437,7 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "17/11/2024",
     categoryId: 5,
+    newspaperId: 17,
   },
   {
     id: 18,
@@ -432,5 +449,6 @@ export const ARTICLES: ArticleProps[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "18/11/2024",
     categoryId: 6,
+    newspaperId: 18,
   },
 ];

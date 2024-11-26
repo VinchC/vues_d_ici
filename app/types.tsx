@@ -54,5 +54,6 @@ export type ArticleProps = {
   text?: string;
   createdAt: string;
   categoryId: number,
+  newspaperId: number;
 };
 

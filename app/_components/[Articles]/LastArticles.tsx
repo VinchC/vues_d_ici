@@ -13,8 +13,6 @@ export const LastArticles = () => {
           <div className="lastArticleGrid">
             {ARTICLES.sort(
               (a, b) => b.id - a.id
-              // new Date(b.createdAt).getTime() -
-              // new Date(a.createdAt).getTime()
             )
               .slice(0, 6)
               .map((article, index) => (

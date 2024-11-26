@@ -10,6 +10,8 @@ export const ArticleCard = (props: {
   chapeau: string;
   text?: string;
   createdAt: string;
+  categoryId: number,
+  newspaperId: number;
 }) => {
   return (
     <div className="articleCard w-80 h-160">
