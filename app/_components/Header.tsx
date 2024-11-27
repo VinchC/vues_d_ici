@@ -50,12 +50,12 @@ export const Header = () => {
                 {NAVBAR_LINKS.map((link, index) => (
                   <NavLink key={index} {...link} />
                 ))}
-                <button
+                {/* <button
                   aria-label="switch the mode from dark to light (os preferences by default)"
                   className="navLinkSmall max-md:navLinkLarge"
                 >
                   <ThemeSwitch />
-                </button>
+                </button> */}
               </ul>
             </div>
           </div>

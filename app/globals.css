@@ -45,7 +45,7 @@ body {
   /* ---------------------------------Texts--------------------------------- */
 
   .text {
-    @apply whitespace-pre-line leading-7 max-lg:text-sm max-sm:text-xs mt-4;
+    @apply whitespace-pre-line text-black leading-7 max-lg:text-sm max-sm:text-xs;
   }
 
   .paragraph {
@@ -73,7 +73,7 @@ body {
   }
 
   .charteParagraph {
-    @apply font-bold mt-4;
+    @apply text font-bold mt-4;
   }
 
   /* ---------------------------------CTA--------------------------------- */
