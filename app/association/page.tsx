@@ -45,41 +45,6 @@ export default function AssociationPage() {
             l’association, en rejoignant l’équipe on en faisant un don.
           </p>
           <h3 className="h3Title">Notre charte</h3>
-          <p className="charteParagraph">1. SUR L&apos;IMPLICATION DE CHACUN</p>
-          <ul className="listStyle">
-            <li>
-              Chaque membre du groupe reste libre de participer ou de ne pas
-              participer à l’élaboration d’un numéro. Il détermine son niveau de
-              participation.
-            </li>
-            <li>
-              Il est attendu que les engagements pris par chacun pour chaque
-              numéro soient tenus.
-            </li>
-            <li>
-              Les impératifs du journal ne sauraient empiéter sur la liberté de
-              chacun. Des solutions en bonne intelligence devront être cherchées
-              en cas de difficulté d’un participant à contribuer selon les
-              engagements pris.
-            </li>
-            <li>
-              Plusieurs rôles sont nécessaires à la réalisation du journal. A ce
-              jour, voici les rôles identifiés : Rédacteur, Photographe,
-              Contributeur d’idées, Coordinateur éditorial, Relecteur, Animateur
-              du groupe, Contact pub, Maquettiste, Coordinateur de l’impression,
-              Distributeur des exemplaires papier, Animateur des réseaux
-              sociaux.
-            </li>
-            <li>
-              Chaque participant peut jouer un ou plusieurs rôles. Plusieurs
-              participants peuvent se partager un rôle.
-            </li>
-            <li>
-              Nous devrons veiller à ce qu’aucune contrainte extérieure ne porte
-              atteinte à ce projet bénévole et donc tourné vers la libre
-              participation.
-            </li>
-          </ul>
           {CHARTER.map((e, index) => (
             <Charter key={index} {...e} />
           ))}
