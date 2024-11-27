@@ -1,23 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { cn, buttonVariants } from "@/components/ui/button";
 import { Section } from "./utils/Section";
-import Link from "next/link";
 import ThemeSwitch from "./utils/ThemeSwitch";
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { NAVBAR_LINKS } from "../data/data";
 import { NavLink } from "./utils/NavLink";
+import Link from "next/link";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background">
-      <Section>
+    <header className="header">
+      <Section className="max-lg:max-w-4xl max-sm:max-w-2xl">
         <nav className="flex">
-          <h1 className="text-lg font-bold text-background">Vues d&apos;ici - Journal de quartier</h1>
+          <Link href="/">
+            <h1 className="text-lg max-sm:leading-6 max-sm:text-sm font-bold text-background">
+              Vues d&apos;ici - Journal de quartier
+            </h1>
+          </Link>
           <div className="flex-1" />
 
           <div className="flex-col">
@@ -47,12 +50,12 @@ export const Header = () => {
                 {NAVBAR_LINKS.map((link, index) => (
                   <NavLink key={index} {...link} />
                 ))}
-                <button
+                {/* <button
                   aria-label="switch the mode from dark to light (os preferences by default)"
-                  className="buttonSmall max-md:buttonLarge"
+                  className="navLinkSmall max-md:navLinkLarge"
                 >
                   <ThemeSwitch />
-                </button>
+                </button> */}
               </ul>
             </div>
           </div>

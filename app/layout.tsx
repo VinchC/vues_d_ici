@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
+import SkipLink from "./_components/utils/SkipLink";
+import { Header } from "./_components/Header";
+import Footer from "./_components/[Footer]/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -16,7 +18,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Vues d'ici - Journal de quartier",
+  title: {
+    template: "Vues d'ici | %s",
+    default: "Vues d'ici - Journal de quartier",
+  },
   description:
     "L'actu locale par et pour les habitants. Vues d'ici est un journal et indépendant soutenu par les habitants des quartiers Belleville, Jourdain, Butts-Chaumonts et Place des Fêtes à Paris.",
 };
@@ -28,10 +33,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="h-full" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} h-full`}
-      >
-        <Providers>{children}</Providers>
+      <body className={`${geistSans.variable} ${geistMono.variable} h-full`}>
+        <SkipLink />
+
+        <Providers>
+          <Header />
+          <main id="maincontent">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
