@@ -14,6 +14,7 @@ import { FacebookIcon } from "../_components/icons/FacebookIcon";
 import { GoogleIcon } from "../_components/icons/GoogleIcon";
 import { InstagramIcon } from "../_components/icons/InstagramIcon";
 import { HelloAssoIcon } from "../_components/icons/HelloAssoIcon";
+import { AssociationProps } from "../types";
 
 export const MAIN_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
   {
@@ -112,7 +113,7 @@ export const NAVBAR_LINKS: NavLinkProps[] = [
     title: "Nous contacter",
   },
   {
-    href: "/association-vues-d-ici",
+    href: "/association",
     title: "L'association",
   },
 ];
@@ -127,11 +128,11 @@ export const FOOTER_LINKS: NavLinkProps[] = [
     title: "Nous trouver",
   },
   {
-    href: "/association-vues-d-ici#nous-rejoindre",
+    href: "/association#nous-rejoindre",
     title: "Nous rejoindre",
   },
   {
-    href: "/association-vues-d-ici#nous-soutenir",
+    href: "/association#nous-soutenir",
     title: "Nous soutenir",
   },
   {
@@ -139,7 +140,7 @@ export const FOOTER_LINKS: NavLinkProps[] = [
     title: "Nous contacter",
   },
   {
-    href: "/association-vues-d-ici",
+    href: "/association",
     title: "Qui sommes-nous ?",
   },
 ];
@@ -231,6 +232,19 @@ export const CAROUSEL_BUTTONS: CarouselButtonProps[] = [
   {
     data_twe_slide_to: "5",
     aria_label: "Slide 6",
+  },
+];
+
+export const ASSOCIATION: AssociationProps[] = [
+  {
+    title: "Adhérer",
+    text: "Pour adhérer à l’association, remplissez le formulaire et retournez le par voie postale avec un chèque. \n Vous pouvez également retrouver le bulletin d’adhésion dans chacun des numéros du journal.",
+    textButton: "Télécharger le bulletin d'adhésion",
+  },
+  {
+    title: "Faire un don",
+    text: "Pour nous soutenir, et nous aider à financer le prochain numéro, cliquez sur le lien ci-dessous. \n Après le paiement, vous recevrez le reçu pour la défiscalisation directement dans votre boîte mail.",
+    textButton: "Faire un don",
   },
 ];
 

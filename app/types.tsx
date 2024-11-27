@@ -57,3 +57,9 @@ export type ArticleProps = {
   newspaperId: number;
 };
 
+export type AssociationProps = {
+  title: string;
+  text: string;
+  textButton: string;
+}
+

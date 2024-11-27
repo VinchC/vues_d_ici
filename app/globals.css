@@ -55,6 +55,10 @@ body {
     @apply paragraph whitespace-pre-line leading-7 mx-24 max-lg:mx-12 max-md:mx-6;
   }
 
+  .h2Title {
+    @apply text-2xl font-semibold;
+  }
+
   /* ---------------------------------CTA--------------------------------- */
 
   .navLink {

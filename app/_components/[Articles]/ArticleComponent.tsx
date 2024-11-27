@@ -18,7 +18,7 @@ export const ArticleComponent = (props: {
     <>
       <div className="flex flex-col">
         <Card className="p-4 gap-2 w-full rounded-b-none">
-          <h2 className="text-3xl font-bold mb-4">{props.title}</h2>
+          <h2 className="h2Title">{props.title}</h2>
           <p className="categoryLink">{props.categoryId}</p>
           <p className="text-xs italic mt-4">Publié le {props.createdAt}</p>
         </Card>
