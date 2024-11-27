@@ -63,3 +63,9 @@ export type AssociationProps = {
   textButton: string;
 }
 
+export type CharterProps = {
+  id: number;
+  title: string;
+  text: string[];
+}
+

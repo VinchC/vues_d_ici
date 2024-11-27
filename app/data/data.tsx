@@ -6,6 +6,7 @@ import {
   MediaProps,
   DistributionPlacesProps,
   ArticleProps,
+  CharterProps,
 } from "../types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
@@ -464,5 +465,25 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "18/11/2024",
     categoryId: 6,
     newspaperId: 18,
+  },
+];
+
+export const CHARTER: CharterProps[] = [
+  {
+    id: 1,
+    title: "2. SUR LES RÔLES DE CHACUN",
+    text: [
+      "Rédacteur : réalise des articles",
+      "Photographe : réalise des photos",
+      "Contributeur d’idées : participe aux réunions, apporte ses idées et propositions",
+      "Coordinateur éditorial : suivi du chemin de fer, réception des articles et autres contenus, vérification de la cohérence et de la conformité de ces contenus, propositions d’amélioration des textes écrits.",
+      "Relecteur : relecture et corrections typographiques",
+      "Animateur du groupe : programme les réunions, propose l’ordre du jour, détermine le mode de compte-rendu, gère le calendrier",
+      "Contact pub : démarche les commerçants et autres annonceurs potentiels pour des encarts pub dans le journal",
+      "Maquettiste : réalise la maquette",
+      "Coordinateur de l’impression : suit les relations avec l’imprimeur",
+      "Distributeur des exemplaires papier : alimente en journaux les points de distribution",
+      "Animateur des réseaux sociaux : alimente notre présence numérique (Facebook, blog…)",
+    ],
   },
 ];

@@ -38,7 +38,7 @@ export const WhereToFind = () => {
               </div>
             </div>
             <h3 className="text-lg mb-2">Points de collecte secondaires</h3>
-            <ul className="list-disc px-4">
+            <ul className="listStyle">
               {SECONDARY_DISTRIBUTION_PLACES.map((place, index) => (
                 <Link key={index} href="/">
                   <li className="paragraph">{place.business_name}</li>

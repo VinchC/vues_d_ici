@@ -50,13 +50,21 @@ body {
   .chapeau {
     @apply text-xl max-lg:text-lg max-sm:text-sm mt-4 mx-24 max-lg:mx-12 max-md:mx-6;
   }
-  
+
   .textArticle {
     @apply paragraph mx-24 max-lg:mx-12 max-md:mx-6;
   }
 
   .h2Title {
-    @apply text-2xl font-semibold;
+    @apply text-2xl font-semibold mt-4;
+  }
+
+  .h3Title {
+    @apply text-lg font-semibold mt-4;
+  }
+
+  .charteParagraph {
+    @apply font-bold mt-4;
   }
 
   /* ---------------------------------CTA--------------------------------- */
@@ -107,6 +115,9 @@ body {
   }
   .footerAndCategories {
     @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center mt-4;
+  }
+  .listStyle {
+    @apply list-disc px-8;
   }
 }
 
