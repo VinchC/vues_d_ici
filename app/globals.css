@@ -10,29 +10,129 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* ---------------------------------Container--------------------------------- */
   .section {
     @apply flex max-md:flex-col items-center gap-4 mt-4;
   }
   .card {
     @apply w-full p-4 flex-col gap-2 styledBorder;
   }
+  .lastArticleGrid {
+    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 mt-8;
+  }
+  .articleCard {
+    @apply flex flex-col gap-4 shadow-md rounded-lg bg-background text-foreground w-72 h-80 max-sm:w-80;
+  }
+
+  /* ---------------------------------Carousel--------------------------------- */
+  .carouselSlider {
+    @apply absolute bottom-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-red-900 opacity-90 transition-opacity hover:text-black hover:no-underline hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none;
+  }
+  .carouselButton {
+    @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-red-900 hover:bg-black bg-clip-padding p-0 -indent-[999px] opacity-40 transition-opacity motion-reduce:transition-none;
+  }
+  .carouselCard {
+    @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
+  }
+  .carouselText {
+    @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-background/30 text-black border-background styledBorder w-60 text-black xs:block;
+  }
+  .transitionDuration {
+    @apply duration-1000;
+  }
+
+  /* ---------------------------------Texts--------------------------------- */
+
+  .text {
+    @apply whitespace-pre-line leading-7 max-lg:text-sm max-sm:text-xs;
+  }
+
+  .paragraph {
+    @apply text leading-7;
+  }
+
+  .chartText {
+    @apply text leading-none;
+  }
+
+  .chapeau {
+    @apply text-xl max-lg:text-lg max-sm:text-sm mt-4 mx-24 max-lg:mx-12 max-md:mx-6;
+  }
+
+  .textArticle {
+    @apply paragraph mx-24 max-lg:mx-12 max-md:mx-6;
+  }
+
+  .h2Title {
+    @apply text-2xl font-semibold mt-4;
+  }
+
+  .h3Title {
+    @apply text-lg font-semibold mt-4;
+  }
+
+  .charteParagraph {
+    @apply text font-bold mt-4;
+  }
+
+  /* ---------------------------------CTA--------------------------------- */
+
+  .navLink {
+    @apply flex justify-center items-center p-0 text-center styledBorder;
+  }
+  .navLinkSmall {
+    @apply navLink bg-foreground hover:bg-foreground/20 text-background text-sm size-8 border-background;
+  }
+  .navLinkLarge {
+    @apply navLink bg-foreground hover:bg-background/20 text-background text-xs h-8 w-24 border-background;
+  }
+  .footerLink {
+    @apply navLink bg-tertiary hover:bg-tertiary/60 text-black text-xs h-8 w-32 border-background;
+  }
+  .categoryLink {
+    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32 border-background;
+  }
+  .button {
+    @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-8;
+  }
+  .mediumButton {
+    @apply button w-24 border-foreground;
+  }
+  .largeButton {
+    @apply button w-32 border-background;
+  }
+  /* ---------------------------------Footer--------------------------------- */
+
+  .footer {
+    @apply flex flex-col items-center bg-foreground text-background text-center mt-8;
+  }
+
+  .footerButton {
+    @apply rounded-full bg-background text-foreground p-3 uppercase leading-normal shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1;
+  }
+  /* ---------------------------------Misc--------------------------------- */
+
+  .header {
+    @apply fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background z-50;
+  }
   .accent {
-    @apply bg-accent/20 hover:bg-accent/30 transition-colors;
-  }
-  .buttonSmall {
-    @apply flex justify-center items-center text-sm p-0 text-background styledBorder hover:accent size-8;
-  }
-  .buttonLarge {
-    @apply flex justify-center items-center text-sm p-0 text-background styledBorder hover:accent h-8 w-28;
+    @apply bg-accent/20 hover:bg-accent/50 transition-colors;
   }
   .styledBorder {
-    @apply border-background border-2 rounded-lg;
+    @apply border-2 rounded-lg;
+  }
+  .footerAndCategories {
+    @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center mt-4;
+  }
+  .listStyle {
+    @apply list-disc px-8;
   }
 }
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground mb-4;
   }
 }
 
