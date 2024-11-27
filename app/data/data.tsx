@@ -17,6 +17,38 @@ import { InstagramIcon } from "../_components/icons/InstagramIcon";
 import { HelloAssoIcon } from "../_components/icons/HelloAssoIcon";
 import { AssociationProps } from "../types";
 
+export const CHARTER: CharterProps[] = [
+  {
+    id: 1,
+    title: "1. SUR L'IMPLICATION DE CHACUN",
+    text: [
+      "Chaque membre du groupe reste libre de participer ou de ne pas participer à l’élaboration d’un numéro. Il détermine son niveau de participation.",
+      "Il est attendu que les engagements pris par chacun pour chaque numéro soient tenus.",
+      "Les impératifs du journal ne sauraient empiéter sur la liberté de chacun. Des solutions en bonne intelligence devront être cherchées en cas de difficulté d’un participant à contribuer selon les engagements pris.",
+      "Plusieurs rôles sont nécessaires à la réalisation du journal. A ce jour, voici les rôles identifiés : Rédacteur, Photographe, Contributeur d’idées, Coordinateur éditorial, Relecteur, Animateur du groupe, Contact pub, Maquettiste, Coordinateur de l’impression, Distributeur des exemplaires papier, Animateur des réseaux sociaux.",
+      "Chaque participant peut jouer un ou plusieurs rôles. Plusieurs participants peuvent se partager un rôle.",
+      "Nous devrons veiller à ce qu’aucune contrainte extérieure ne porte atteinte à ce projet bénévole et donc tourné vers la libre participation.",
+    ],
+  },
+  {
+    id: 2,
+    title: "2. SUR LES RÔLES DE CHACUN",
+    text: [
+      "Rédacteur : réalise des articles",
+      "Photographe : réalise des photos",
+      "Contributeur d’idées : participe aux réunions, apporte ses idées et propositions",
+      "Coordinateur éditorial : suivi du chemin de fer, réception des articles et autres contenus, vérification de la cohérence et de la conformité de ces contenus, propositions d’amélioration des textes écrits.",
+      "Relecteur : relecture et corrections typographiques",
+      "Animateur du groupe : programme les réunions, propose l’ordre du jour, détermine le mode de compte-rendu, gère le calendrier",
+      "Contact pub : démarche les commerçants et autres annonceurs potentiels pour des encarts pub dans le journal",
+      "Maquettiste : réalise la maquette",
+      "Coordinateur de l’impression : suit les relations avec l’imprimeur",
+      "Distributeur des exemplaires papier : alimente en journaux les points de distribution",
+      "Animateur des réseaux sociaux : alimente notre présence numérique (Facebook, blog…)",
+    ],
+  },
+];
+
 export const MAIN_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
   {
     business_name: "Centre Paris Aim'Clavel",
@@ -465,37 +497,5 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "18/11/2024",
     categoryId: 6,
     newspaperId: 18,
-  },
-];
-
-export const CHARTER: CharterProps[] = [
-  {
-    id: 1,
-    title: "1. SUR L'IMPLICATION DE CHACUN",
-    text: [
-      "Chaque membre du groupe reste libre de participer ou de ne pas participer à l’élaboration d’un numéro. Il détermine son niveau de participation.",
-      "Il est attendu que les engagements pris par chacun pour chaque numéro soient tenus.",
-      "Les impératifs du journal ne sauraient empiéter sur la liberté de chacun. Des solutions en bonne intelligence devront être cherchées en cas de difficulté d’un participant à contribuer selon les engagements pris.",
-      "Plusieurs rôles sont nécessaires à la réalisation du journal. A ce jour, voici les rôles identifiés : Rédacteur, Photographe, Contributeur d’idées, Coordinateur éditorial, Relecteur, Animateur du groupe, Contact pub, Maquettiste, Coordinateur de l’impression, Distributeur des exemplaires papier, Animateur des réseaux sociaux.",
-      "Chaque participant peut jouer un ou plusieurs rôles. Plusieurs participants peuvent se partager un rôle.",
-      "Nous devrons veiller à ce qu’aucune contrainte extérieure ne porte atteinte à ce projet bénévole et donc tourné vers la libre participation.",
-    ],
-  },
-  {
-    id: 2,
-    title: "2. SUR LES RÔLES DE CHACUN",
-    text: [
-      "Rédacteur : réalise des articles",
-      "Photographe : réalise des photos",
-      "Contributeur d’idées : participe aux réunions, apporte ses idées et propositions",
-      "Coordinateur éditorial : suivi du chemin de fer, réception des articles et autres contenus, vérification de la cohérence et de la conformité de ces contenus, propositions d’amélioration des textes écrits.",
-      "Relecteur : relecture et corrections typographiques",
-      "Animateur du groupe : programme les réunions, propose l’ordre du jour, détermine le mode de compte-rendu, gère le calendrier",
-      "Contact pub : démarche les commerçants et autres annonceurs potentiels pour des encarts pub dans le journal",
-      "Maquettiste : réalise la maquette",
-      "Coordinateur de l’impression : suit les relations avec l’imprimeur",
-      "Distributeur des exemplaires papier : alimente en journaux les points de distribution",
-      "Animateur des réseaux sociaux : alimente notre présence numérique (Facebook, blog…)",
-    ],
   },
 ];
