@@ -15,7 +15,7 @@ export default function ArticlePage() {
       <Spacing size="sm" />
       <Section className="section justify-center mt-8 max-lg:mt-20">
         <Card className="p-4 gap-2">
-          <h2 className="text-2xl mb-4">Nos articles et journaux</h2>
+          <h2 className="h2Title">Nos articles et journaux</h2>
           <p className="paragraph">Rechercher le contenu d&apos;un article</p>
           <Search search={search} handleSearchUpdate={setSearch} />
           <p className="paragraph">Filtrer par catégorie</p>

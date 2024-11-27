@@ -23,7 +23,7 @@ export default function CarouselCard(category: {
           alt={category.alt}
         />
         <div className="carouselText">
-          <p className="paragraph">{category.title}</p>
+          <p>{category.title}</p>
         </div>
       </Link>
     </div>
