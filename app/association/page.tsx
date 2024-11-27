@@ -25,7 +25,7 @@ export default function AssociationPage() {
             Vous pouvez nous soutenir de plusieurs façon: en adhérant à
             l’association, en rejoignant l’équipe on en faisant un don.
           </p>
-        <div className="grid grid-cols-2 items-center gap-8">
+        <div className="grid grid-cols-2 max-sm:block items-center gap-8">
         {ASSOCIATION.map((e, index) => (
           <SupportComponent key={index} {...e} />
         ))}
