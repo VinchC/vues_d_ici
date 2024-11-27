@@ -45,7 +45,7 @@ body {
   /* ---------------------------------Texts--------------------------------- */
 
   .text {
-    @apply whitespace-pre-line text-black leading-7 max-lg:text-sm max-sm:text-xs;
+    @apply whitespace-pre-line leading-7 max-lg:text-sm max-sm:text-xs;
   }
 
   .paragraph {

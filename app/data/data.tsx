@@ -47,6 +47,41 @@ export const CHARTER: CharterProps[] = [
       "Animateur des réseaux sociaux : alimente notre présence numérique (Facebook, blog…)",
     ],
   },
+  {
+    id: 3,
+    title: "3. SUR NOS ÉCHANGES GROUPÉS",
+    text: [
+      "Les décisions sur le contenu doivent être prises en réunion, formalisées si besoin dans un compte-rendu ou un chemin de fer.",
+      "Entre les réunions, chacun peut réfléchir à des propositions de modifications/ compléments quidevront être soumises au groupe en réunion pour être validées.",
+      "La discussion et le consensus sont privilégiés pour prendre les décisions. Le vote à la majorité est utilisable en dernier recours.",
+      "Evitons toute invective et remarque personnelle désobligeante dans nos envois groupés qui doivent être réservés à des discussions sur le fond, limités dans la mesure du possible (les réunions sont privilégiées pour nos échanges collectifs), et tournés vers l’avancement du journal.",
+    ],
+  },
+  {
+    id: 4,
+    title: "4. SUR LES CHOIX DE CONTENU",
+    text: [
+      "Chacun est libre d’exprimer son désaccord sur un contenu, dans un principe de liberté d’expression. Chaque point de vue doit être basé sur des arguments de fond.",
+      "Nous partons du principe que chaque proposition de contenu (texte, photo, poème…) a de la valeur et doit pouvoir trouver sa place dans le journal, dans le numéro à en préparation ou l’un des suivants, avec des ajustements si nécessaire en fonction des observations étayées des autres membres du groupe.",
+      "Des limites devront être respectées dans les choix de contenu : \n – l’identité du journal telle que nous l’avons définie. Cette définition peut évoluer. A ce jour, elle est la suivante : pluriel, citoyen, tourné vers le vivre-ensemble et la capacité d’action des habitants. \n – le périmètre du journal en terme de lectorat et de distribution. Il correspond aux quartiers Pyrénées, Plateau, Jourdain et Place des Fêtes. \n – le respect des contraintes techniques du journal : espace disponible, rubricage… \n – les règles éthiques du traitement de l’information : vérification des sources, croisement des informations, non-diffamation…",
+    ],
+  },
+  {
+    id: 5,
+    title: "5. SUR LES ENVOIS ET RELECTURES DE CONTENUS",
+    text: [
+      "Il est demandé au rédacteur de respecter les règles suivantes de production des écrits : \n – Conformité au chemin de fer : sujet, éventuellement angle, et calibrage de l’article \n – Prise en compte de règles journalistiques : \n    - Chaque article doit répondre aux 5W quant à l’information principale (what, why…), c’est-à-dire répondre aux questions quoi, pourquoi, qui, où, quand? \n     - Les informations doivent être vérifiées.Toute citation entre guillemets doit être attribuée.",
+      "Le Rédacteur est signataire des articles, il reste responsable de ses productions mais doit se conformer aux limites qui s’appliquent au contenu",
+      "Si les modifications sur les textes doivent être soumises au rédacteur avant maquette, le coordinateur éditorial est libre de placer de nouveaux titres, chapo et inter avant et pendant la phase de maquette.",
+    ],
+  },
+  {
+    id: 6,
+    title: "6. SUR LES RETOURS SUR LA VERSION FINALE",
+    text: [
+      "Le journal, une fois maquette, sera adressé à tous (via la liste mail) pour permettre à chacun de partager ses observations avant impression/diffusion.",
+    ],
+  },
 ];
 
 export const MAIN_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [

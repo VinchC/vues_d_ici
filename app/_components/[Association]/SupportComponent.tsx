@@ -1,5 +1,6 @@
 import { AssociationProps } from "@/app/types";
 import Membership from "./Membership";
+import Link from "next/link";
 
 export default function SupportComponent(props: AssociationProps) {
   return (
@@ -7,7 +8,13 @@ export default function SupportComponent(props: AssociationProps) {
       <h2 className="h2Title text-black">{props.title}</h2>
       <p className="paragraph text-black">{props.text}</p>
       {props.textButton == "Faire un don" ? (
-        <button className="categoryLink mt-4">{props.textButton}</button>
+        <Link
+          target="_blank"
+          href="https://www.helloasso.com/associations/quartier-vu-d-ici-19-20/collectes/prochain-numero-de-vues-d-ici-nous-avons-besoin-de-vous"
+          className="categoryLink mt-4"
+        >
+          {props.textButton}
+        </Link>
       ) : (
         <Membership />
       )}

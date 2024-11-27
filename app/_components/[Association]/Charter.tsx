@@ -25,7 +25,7 @@ export default function Charter(props: CharterProps) {
         onClick={() => {
           toggleAccordion(props.id), setOpen;
         }}
-        className="w-full flex justify-between items-center py-5 text-slate-800"
+        className="w-full flex justify-between items-center py-5"
       >
         <p className="charteParagraph">{props.title}</p>
         <span
