@@ -69,7 +69,7 @@ body {
   }
 
   .h3Title {
-    @apply text-xl max-sm:text-lg font-semibold mt-4;
+    @apply text-xl max-sm:text-lg font-semibold mt-8;
   }
 
   .charteParagraph {

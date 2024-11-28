@@ -1,6 +1,6 @@
-import { Section } from "./utils/Section";
 import Link from "next/link";
-import Carousel from "./[Carousel]/Carousel";
+import { Section } from "../utils/Section";
+import Carousel from "../[Carousel]/Carousel";
 
 export const Hero = () => {
   return (
@@ -21,7 +21,7 @@ export const Hero = () => {
               Trouver une édition papier
             </Link>
             <Link
-              href="/association-vues-d-ici#nous-soutenir"
+              href="/association#nous-soutenir"
               className="mediumButton"
             >
               Nous soutenir

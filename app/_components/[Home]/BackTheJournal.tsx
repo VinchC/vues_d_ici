@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Section } from "./utils/Section";
+import { Section } from "../utils/Section";
 import { Card } from "@/components/ui/card";
 
 export const BackTheJournal = () => {
@@ -7,7 +7,7 @@ export const BackTheJournal = () => {
     <>
       <Section className="section justify-center">
         <Card className="p-4 gap-2 max-lg:mt-20">
-          <h2 className="text-2xl mb-4">Où trouver le journal ?</h2>
+          <h2 className="text-2xl mb-4">Soutenir le journal</h2>
           <p className="paragraph">
             Vous aimez l&apos;initiative et souhaitez investir dans Vues
             d&apos;Ici ?
@@ -19,7 +19,7 @@ export const BackTheJournal = () => {
           </p>
           <div className="flex justify-evenly">
             <Link
-              href="/association-vues-d-ici#nous-soutenir"
+              href="/association#nous-soutenir"
               className="largeButton"
             >
               Nous soutenir

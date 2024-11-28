@@ -114,40 +114,40 @@ export const CHARTER: CharterProps[] = [
 
 export const MAIN_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
   {
-    business_name: "Centre Paris Aim'Clavel",
+    business_name: "Centre Paris Anim' Clavel",
     address: "24 bis rue Clavel",
     city: "Paris",
     district: "19ème",
   },
   {
-    business_name: "Centre Paris Aim'Clavel",
-    address: "24 bis rue Clavel",
+    business_name: "Centre Paris Anim' Place des Fêtes",
+    address: "2 rue des Lilas",
     city: "Paris",
     district: "19ème",
   },
   {
-    business_name: "Centre Paris Aim'Clavel",
-    address: "24 bis rue Clavel",
+    business_name: "Centre socio-culturel Archipelia",
+    address: "17 rue des Envierges",
+    city: "Paris",
+    district: "20ème",
+  },
+  {
+    business_name: "Bibliothèque Fessart",
+    address: "6 rue Fessart",
     city: "Paris",
     district: "19ème",
   },
   {
-    business_name: "Centre Paris Aim'Clavel",
-    address: "24 bis rue Clavel",
+    business_name: "MJC Les Hauts de Belleville",
+    address: "43 rue du Borrégo",
     city: "Paris",
-    district: "19ème",
+    district: "20ème",
   },
   {
-    business_name: "Centre Paris Aim'Clavel",
-    address: "24 bis rue Clavel",
+    business_name: "Bibliothèque Oscar Wilde",
+    address: "12 rue du Télégraphe",
     city: "Paris",
-    district: "19ème",
-  },
-  {
-    business_name: "Centre Paris Aim'Clavel",
-    address: "24 bis rue Clavel",
-    city: "Paris",
-    district: "19ème",
+    district: "20ème",
   },
 ];
 
@@ -169,6 +169,27 @@ export const SECONDARY_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
   },
   {
     business_name: "Le foyer Pauline Roland",
+  },
+  {
+    business_name: "L'atelier Kats",
+  },
+  {
+    business_name: "Le théâtre Atelier du Plateau",
+  },
+  {
+    business_name: "L'espace Reine de Saba",
+  },
+  {
+    business_name: "Le coiffeur Ça décoiffe",
+  },
+  {
+    business_name: "Le Point presse La Fée Carabine",
+  },
+  {
+    business_name: "Le centre socio-culturel des Rigoles.",
+  },
+  {
+    business_name: "Les Mairies et Maisons des associations des 19e et 20e",
   },
 ];
 

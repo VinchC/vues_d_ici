@@ -1,20 +1,19 @@
 import Link from "next/link";
-import Carousel from "./[Carousel]/Carousel";
-import { Section } from "./utils/Section";
 import { Card } from "@/components/ui/card";
+import { Section } from "../utils/Section";
 import {
   MAIN_DISTRIBUTION_PLACES,
   SECONDARY_DISTRIBUTION_PLACES,
-} from "../data/data";
+} from "@/app/data/data";
 
 export const WhereToFind = () => {
   return (
     <>
-      <div id="nous-trouver" >
+      <div id="nous-trouver">
         <Section className="section justify-center">
           <Card className="p-4 gap-2 max-lg:mt-20">
-            <h2 className="text-2xl mb-4">Où trouver le journal ?</h2>
-            <p className="mb-8">
+            <h2 className="h2Title">Où trouver le journal ?</h2>
+            <p className="paragraph mb-8">
               A chaque parution, vous pouvez vous servir gratuitement dans un
               des lieux répartis sur le quartier. Les points de collecte
               principaux sont approvisionnés prioritairement.
@@ -38,13 +37,16 @@ export const WhereToFind = () => {
               </div>
             </div>
             <h3 className="text-lg mb-2">Points de collecte secondaires</h3>
-            <ul className="listStyle">
+            <div className="grid grid-cols-2 max-sm:grid-cols-1">
               {SECONDARY_DISTRIBUTION_PLACES.map((place, index) => (
                 <Link key={index} href="/">
-                  <li className="paragraph">{place.business_name}</li>
+                  <p className="text">{place.business_name}</p>
                 </Link>
               ))}
-            </ul>
+            </div>
+            <p className="paragraph">
+              Et plein d’autres commerces, cafés et équipements !
+            </p>
           </Card>
         </Section>
       </div>

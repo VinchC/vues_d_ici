@@ -1,10 +1,10 @@
 "use client";
 
 import { Spacing } from "./_components/utils/Spacing";
-import { Hero } from "./_components/Hero";
 import { LastArticles } from "./_components/[Articles]/LastArticles";
-import { WhereToFind } from "./_components/WhereToFind";
-import { BackTheJournal } from "./_components/BackTheJournal";
+import { BackTheJournal } from "./_components/[Home]/BackTheJournal";
+import { WhereToFind } from "./_components/[Home]/WhereToFind";
+import { Hero } from "./_components/[Home]/Hero";
 
 export default function Home() {
   return (
