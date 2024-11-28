@@ -11,8 +11,8 @@ export default function AssociationPage() {
   return (
     <>
       <Spacing size="sm" />
-      <Section className="section justify-center">
-        <Card className="p-4 gap-2">
+      <Section className="section">
+        <Card className="cardBase">
           <h2 className="h2Title">L&apos;association Vues d&apos;ici</h2>
           <p className="paragraph">
             Le journal de quartier Vues d’ici est une publication locale,

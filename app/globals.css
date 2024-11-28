@@ -12,14 +12,27 @@ body {
   }
 
   /* ---------------------------------Container--------------------------------- */
+
+  .spacing {
+    @apply mt-2 mb-2;
+  }
+  .spacingMedium {
+    @apply mt-4 mb-4;
+  }
+  div {
+    @apply spacing;
+  }
   .section {
-    @apply flex max-md:flex-col items-center gap-4 mt-8 max-lg:mt-20;
+    @apply flex max-md:flex-col justify-center items-center gap-4 spacingMedium max-lg:mt-12;
   }
   .card {
     @apply w-full p-4 flex-col gap-2 styledBorder;
   }
+  .cardBase {
+    @apply p-4 gap-2;
+  }
   .lastArticleGrid {
-    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 mt-8;
+    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 spacingMedium;
   }
   .articleCard {
     @apply flex flex-col gap-4 shadow-md rounded-lg bg-background text-foreground w-72 h-80 max-sm:w-80;
@@ -49,7 +62,7 @@ body {
   }
 
   .paragraph {
-    @apply text leading-7 mt-2;
+    @apply text leading-7 spacing;
   }
 
   .chartText {
@@ -64,12 +77,16 @@ body {
     @apply paragraph mx-24 max-lg:mx-12 max-md:mx-6;
   }
 
+  .h1Title {
+    @apply spacing text-lg max-sm:leading-6 max-sm:text-sm font-bold text-background;
+  }
+
   .h2Title {
-    @apply text-2xl max-sm:text-lg font-semibold;
+    @apply spacing text-2xl max-sm:text-lg font-semibold;
   }
 
   .h3Title {
-    @apply text-xl max-sm:text-lg font-semibold mt-8;
+    @apply spacingMedium text-xl max-sm:text-lg font-semibold;
   }
 
   .charteParagraph {
@@ -105,7 +122,7 @@ body {
   /* ---------------------------------Footer--------------------------------- */
 
   .footer {
-    @apply flex flex-col items-center bg-foreground text-background text-center mt-8;
+    @apply flex flex-col items-center bg-foreground text-background text-center;
   }
 
   .footerButton {
@@ -114,7 +131,7 @@ body {
   /* ---------------------------------Misc--------------------------------- */
 
   .header {
-    @apply fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background z-50;
+    @apply fixed w-full top-0 h-16 bg-card border-b-[2px] border-background z-50;
   }
   .accent {
     @apply bg-accent/20 hover:bg-accent/50 transition-colors;
@@ -123,7 +140,7 @@ body {
     @apply border-2 rounded-lg;
   }
   .footerAndCategories {
-    @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center mt-4;
+    @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center spacingMedium;
   }
   .listStyle {
     @apply list-disc px-8;

@@ -7,12 +7,14 @@ import { ARTICLES } from "../../data/data";
 
 export default function ArticlePage(req: any) {
   const id = req.params.id;
-  const article = ARTICLES[(id-1)];
+
+  const index = id - 1;
+  const article = ARTICLES[index];
 
   return (
     <>
       <Spacing size="sm" />
-      <Section className="section justify-center">
+      <Section className="section">
         <ArticleComponent {...article} />
       </Section>
     </>

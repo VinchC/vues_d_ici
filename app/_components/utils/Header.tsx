@@ -16,11 +16,11 @@ export const Header = () => {
     <header className="header">
       <Section className="max-lg:max-w-4xl max-sm:max-w-2xl">
         <nav className="flex">
-          <Link href="/">
-            <h1 className="text-lg max-sm:leading-6 max-sm:text-sm font-bold text-background">
-              Vues d&apos;ici - Journal de quartier
-            </h1>
-          </Link>
+          <div>
+            <Link href="/">
+              <h1 className="h1Title">Vues d&apos;ici - Journal de quartier</h1>
+            </Link>
+          </div>
           <div className="flex-1" />
 
           <div className="flex-col">

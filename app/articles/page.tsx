@@ -13,8 +13,8 @@ export default function ArticlePage() {
   return (
     <>
       <Spacing size="sm" />
-      <Section className="section justify-center">
-        <Card className="p-4 gap-2">
+      <Section className="section">
+        <Card className="cardBase">
           <h2 className="h2Title">Nos articles et journaux</h2>
           <p className="paragraph">Rechercher le contenu d&apos;un article</p>
           <Search search={search} handleSearchUpdate={setSearch} />
