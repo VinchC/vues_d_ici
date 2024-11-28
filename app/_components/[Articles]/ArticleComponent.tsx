@@ -25,7 +25,7 @@ export const ArticleComponent = (props: {
         <img src={props.picture} alt={props.alt} className="m-0 w-full" />
         <Card className="p-4 gap-2 w-full rounded-t-none">
         <p className="chapeau">{props.chapeau}</p>
-        <article className="textArticle">{props.text}</article>
+        <article className="textArticle mt-4">{props.text}</article>
         </Card>
       </div>
     </>

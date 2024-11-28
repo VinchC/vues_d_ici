@@ -12,7 +12,7 @@ export default function ArticlePage(req: any) {
   return (
     <>
       <Spacing size="sm" />
-      <Section className="section justify-center mt-8 max-lg:mt-20">
+      <Section className="section justify-center">
         <ArticleComponent {...article} />
       </Section>
     </>

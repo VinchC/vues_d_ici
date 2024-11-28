@@ -11,7 +11,7 @@ export default function AssociationPage() {
   return (
     <>
       <Spacing size="sm" />
-      <Section className="section justify-center mt-8 max-lg:mt-20">
+      <Section className="section justify-center">
         <Card className="p-4 gap-2">
           <h2 className="h2Title">L&apos;association Vues d&apos;ici</h2>
           <p className="paragraph">

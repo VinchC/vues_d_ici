@@ -13,7 +13,7 @@ body {
 
   /* ---------------------------------Container--------------------------------- */
   .section {
-    @apply flex max-md:flex-col items-center gap-4 mt-4;
+    @apply flex max-md:flex-col items-center gap-4 mt-8 max-lg:mt-20;
   }
   .card {
     @apply w-full p-4 flex-col gap-2 styledBorder;
@@ -49,7 +49,7 @@ body {
   }
 
   .paragraph {
-    @apply text leading-7;
+    @apply text leading-7 mt-2;
   }
 
   .chartText {
@@ -65,7 +65,7 @@ body {
   }
 
   .h2Title {
-    @apply text-2xl font-semibold mt-4;
+    @apply text-2xl font-semibold;
   }
 
   .h3Title {
@@ -73,7 +73,7 @@ body {
   }
 
   .charteParagraph {
-    @apply text font-bold mt-4;
+    @apply text text-left font-bold mt-4;
   }
 
   /* ---------------------------------CTA--------------------------------- */
