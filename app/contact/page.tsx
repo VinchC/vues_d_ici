@@ -16,7 +16,6 @@ export default function ContactPage() {
   console.log(agreed);
   return (
     <>
-      <Spacing size="sm" />
       <Section className="section justify-center">
         <Card className="p-4 gap-2">
           <h2 className="h2Title">Nous contacter</h2>
