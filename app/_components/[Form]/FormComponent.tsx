@@ -3,7 +3,7 @@ import { FormProps } from "@/app/types";
 export default function FormComponent(props: FormProps) {
   return (
     <div>
-      <label htmlFor={props.title} className="block font-semibold">
+      <label htmlFor={props.title} className="inputLabel">
         {props.fieldName}
       </label>
       <div className="mt-2">
