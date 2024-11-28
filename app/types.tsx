@@ -1,3 +1,10 @@
+export type FormProps = {
+  id: number;
+  title: string;
+  fieldName: string;
+  autoComplete: string;
+}
+
 export type CharterProps = {
   id: number;
   title: string;

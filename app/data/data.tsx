@@ -7,6 +7,7 @@ import {
   DistributionPlacesProps,
   ArticleProps,
   CharterProps,
+  FormProps,
 } from "../types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
@@ -16,6 +17,33 @@ import { GoogleIcon } from "../_components/icons/GoogleIcon";
 import { InstagramIcon } from "../_components/icons/InstagramIcon";
 import { HelloAssoIcon } from "../_components/icons/HelloAssoIcon";
 import { AssociationProps } from "../types";
+
+export const FORM_FIELDS: FormProps[] = [
+  {
+    id: 1,
+    title: "first-name",
+    fieldName: "Prénom",
+    autoComplete: "given-name",
+  },
+  {
+    id: 2,
+    title: "last-name",
+    fieldName: "Nom de famille",
+    autoComplete: "family-name",
+  },
+  {
+    id: 3,
+    title: "email",
+    fieldName: "Email",
+    autoComplete: "email",
+  },
+  {
+    id: 4,
+    title: "company",
+    fieldName: "Entreprise",
+    autoComplete: "organization",
+  },
+];
 
 export const CHARTER: CharterProps[] = [
   {
