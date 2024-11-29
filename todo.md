@@ -1,6 +1,10 @@
 ## Manage accessibility for all pages
 
+## Journal page to implement
+
 ## Refacto CSS
+
+## Carousel picture to change
 
 ## Search Form Reset to implement
 

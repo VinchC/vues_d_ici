@@ -1,9 +1,6 @@
-export default function CarouselSlider(props: {
-  data_twe_slide: string;
-  path_d: string;
-  title: string;
-  className: string;
-}) {
+import { CarouselSliderProps } from "@/app/types";
+
+export default function CarouselSlider(props: CarouselSliderProps) {
   return (
     <button
       className={`carouselSlider ${props.className}`}

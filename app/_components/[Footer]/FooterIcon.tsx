@@ -1,11 +1,7 @@
+import { MediaProps } from "@/app/types";
 import { AccessibleIcon } from "@radix-ui/react-accessible-icon";
-import { Link } from "lucide-react";
 
-export const FooterIcon = (props: {
-  href: string;
-  icon: any;
-  label: string;
-}) => {
+export const FooterIcon = (props: MediaProps) => {
   return (
     <button className="footerButton">
       <a

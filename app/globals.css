@@ -115,7 +115,7 @@ body {
     @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32 border-background;
   }
   .button {
-    @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-8;
+    @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-8 spacingMedium;
   }
   .mediumButton {
     @apply button w-24 border-foreground;
