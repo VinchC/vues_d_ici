@@ -1,6 +1,10 @@
 export default function SearchButton() {
   return (
-    <button type="submit" className="absolute right-0 top-0 mt-1 mr-2">
+    <button
+      type="submit"
+      aria-label="lance la recherche de contenu dans le titre ou le texte d'un article"
+      className="absolute right-0 top-0 mt-1 mr-2"
+    >
       <svg
         className="h-6 w-6 fill-black"
         xmlns="http://www.w3.org/2000/svg"

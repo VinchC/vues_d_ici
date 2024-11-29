@@ -31,6 +31,7 @@ export const Header = () => {
                 }}
                 type="button"
                 className="text-background"
+                aria-label="ouvre le menu déroulant de la barre de navigation pour les écrans dont la largeur est inférieure à 768 pixels"
               >
                 <Menu />
               </button>
@@ -51,7 +52,7 @@ export const Header = () => {
                   <NavLink key={index} {...link} />
                 ))}
                 <button
-                  aria-label="switch the mode from dark to light (os preferences by default)"
+                  aria-label="bascule le mode jour / nuit (prend par défaut le mode préfére par l'utilisateur"
                   className="navLinkSmall max-md:navLinkLarge"
                 >
                   <ThemeSwitch />

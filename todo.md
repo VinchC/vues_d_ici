@@ -1,5 +1,3 @@
-## Manage accessibility for all pages
-
 ## Journal page to implement
 
 ## Refacto CSS

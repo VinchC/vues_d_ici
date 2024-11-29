@@ -326,29 +326,29 @@ export const CAROUSEL_SLIDERS: CarouselSliderProps[] = [
 export const CAROUSEL_BUTTONS: CarouselButtonProps[] = [
   {
     data_twe_slide_to: "0",
-    aria_label: "Slide 1",
+    aria_label: "slide 1",
     data_twe_carousel_active: "data-twe-carousel-active",
   },
   {
     data_twe_slide_to: "1",
-    aria_label: "Slide 2",
+    aria_label: "slide 2",
   },
   {
     data_twe_slide_to: "2",
-    aria_label: "Slide 3",
+    aria_label: "slide 3",
   },
   {
     data_twe_slide_to: "3",
-    aria_label: "Slide 4",
+    aria_label: "slide 4",
     data_twe_carousel_active: "data-twe-carousel-active",
   },
   {
     data_twe_slide_to: "4",
-    aria_label: "Slide 5",
+    aria_label: "slide 5",
   },
   {
     data_twe_slide_to: "5",
-    aria_label: "Slide 6",
+    aria_label: "slide 6",
   },
 ];
 
