@@ -11,7 +11,7 @@ body {
     text-wrap: balance;
   }
 
-  /* ---------------------------------Container--------------------------------- */
+  /* ---------------------------------Spacing--------------------------------- */
 
   .spacing {
     @apply mt-2 mb-2;
@@ -22,6 +22,9 @@ body {
   div {
     @apply spacing;
   }
+
+  /* ---------------------------------Containers--------------------------------- */
+
   .section {
     @apply flex max-md:flex-col justify-center items-center gap-4 spacingMedium max-lg:mt-12;
   }
@@ -39,6 +42,7 @@ body {
   }
 
   /* ---------------------------------Carousel--------------------------------- */
+
   .carouselSlider {
     @apply absolute bottom-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-red-900 opacity-90 transition-opacity hover:text-black hover:no-underline hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none;
   }
@@ -49,33 +53,13 @@ body {
     @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
   }
   .carouselText {
-    @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-background/30 text-black border-background styledBorder w-60 text-black xs:block;
+    @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-fourth/60 text-black border-background styledBorder w-60 text-black xs:block;
   }
   .transitionDuration {
     @apply duration-1000;
   }
 
-  /* ---------------------------------Texts--------------------------------- */
-
-  .text {
-    @apply whitespace-pre-line leading-7 max-lg:text-sm max-sm:text-xs;
-  }
-
-  .paragraph {
-    @apply text leading-7 spacing;
-  }
-
-  .chartText {
-    @apply text leading-none;
-  }
-
-  .chapeau {
-    @apply text-xl max-lg:text-lg max-sm:text-sm mt-4 mx-24 max-lg:mx-12 max-md:mx-6;
-  }
-
-  .textArticle {
-    @apply paragraph mx-24 max-lg:mx-12 max-md:mx-6;
-  }
+  /* ---------------------------------Text--------------------------------- */
 
   .h1Title {
     @apply spacing text-lg max-sm:leading-6 max-sm:text-sm font-bold text-background;
@@ -87,6 +71,26 @@ body {
 
   .h3Title {
     @apply spacingMedium text-xl max-sm:text-lg font-semibold;
+  }
+
+  .text {
+    @apply whitespace-pre-line leading-7 max-lg:text-sm max-sm:text-xs;
+  }
+
+  .paragraph {
+    @apply text leading-7 spacing;
+  }
+
+  .chapeau {
+    @apply text-xl max-lg:text-lg max-sm:text-sm mt-4 mx-24 max-lg:mx-12 max-md:mx-6;
+  }
+
+  .textArticle {
+    @apply paragraph mx-24 max-lg:mx-12 max-md:mx-6;
+  }
+
+  .chartText {
+    @apply text leading-none;
   }
 
   .charteParagraph {
@@ -126,7 +130,7 @@ body {
   }
 
   .footerButton {
-    @apply rounded-full bg-background text-foreground p-3 uppercase leading-normal shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1;
+    @apply rounded-full bg-background text-foreground px-2 uppercase leading-normal shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1;
   }
   /* ---------------------------------Misc--------------------------------- */
 
