@@ -8,15 +8,15 @@ import {
   ArticleProps,
   CharterProps,
   FormProps,
-} from "../types";
+} from "../app/types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
 import station from "@/public/images/station_serge_gainsbourg.jpg";
-import { FacebookIcon } from "../_components/icons/FacebookIcon";
-import { GoogleIcon } from "../_components/icons/GoogleIcon";
-import { InstagramIcon } from "../_components/icons/InstagramIcon";
-import { HelloAssoIcon } from "../_components/icons/HelloAssoIcon";
-import { AssociationProps } from "../types";
+import { FacebookIcon } from "../app/_components/icons/FacebookIcon";
+import { GoogleIcon } from "../app/_components/icons/GoogleIcon";
+import { InstagramIcon } from "../app/_components/icons/InstagramIcon";
+import { HelloAssoIcon } from "../app/_components/icons/HelloAssoIcon";
+import { AssociationProps } from "../app/types";
 
 export const FORM_FIELDS: FormProps[] = [
   {

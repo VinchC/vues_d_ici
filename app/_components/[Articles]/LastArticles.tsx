@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "../utils/Section";
-import { ARTICLES } from "../../data/data";
+import { ARTICLES } from "../../../data/data";
 import { ArticleCard } from "./ArticleCard";
 import Link from "next/link";
 
@@ -11,9 +11,7 @@ export const LastArticles = () => {
         <Card className="p-4 gap-2">
           <h2 className="h2Title">Nos derniers articles</h2>
           <div className="lastArticleGrid">
-            {ARTICLES.sort(
-              (a, b) => b.id - a.id
-            )
+            {ARTICLES.sort((a, b) => b.id - a.id)
               .slice(0, 6)
               .map((article, index) => (
                 <ArticleCard key={index} {...article} />

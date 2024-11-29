@@ -4,7 +4,7 @@ import { Section } from "../utils/Section";
 import {
   MAIN_DISTRIBUTION_PLACES,
   SECONDARY_DISTRIBUTION_PLACES,
-} from "@/app/data/data";
+} from "@/data/data";
 
 export const WhereToFind = () => {
   return (

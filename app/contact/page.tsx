@@ -2,7 +2,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 import { Card } from "@/components/ui/card";
 import { Section } from "../_components/utils/Section";
-import { FORM_FIELDS } from "../data/data";
+import { FORM_FIELDS } from "../../data/data";
 import FormComponent from "../_components/[Form]/FormComponent";
 import Link from "next/link";
 import PolicyAcceptance from "../_components/utils/PolicyAcceptance";

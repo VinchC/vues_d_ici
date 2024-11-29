@@ -5,7 +5,7 @@ import { Section } from "../utils/Section";
 import ThemeSwitch from "../utils/ThemeSwitch";
 import { useState } from "react";
 import { Menu } from "lucide-react";
-import { NAVBAR_LINKS } from "@/app/data/data";
+import { NAVBAR_LINKS } from "@/data/data";
 import { NavLink } from "../utils/NavLink";
 import Link from "next/link";
 

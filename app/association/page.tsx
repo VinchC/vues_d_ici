@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Spacing } from "../_components/utils/Spacing";
 import { Section } from "../_components/utils/Section";
 import SupportComponent from "../_components/[Association]/SupportComponent";
-import { ASSOCIATION, CHARTER } from "../data/data";
+import { ASSOCIATION, CHARTER } from "../../data/data";
 import Charter from "../_components/[Association]/Charter";
 
 export default function AssociationPage() {
@@ -31,7 +31,9 @@ export default function AssociationPage() {
               <SupportComponent key={index} {...e} />
             ))}
           </div>
-          <h3 className="h3Title" id="nous-rejoindre" >Nous rejoindre</h3>
+          <h3 className="h3Title" id="nous-rejoindre">
+            Nous rejoindre
+          </h3>
           <p className="paragraph">
             Vous souhaitez vous impliquer de manière plus régulière dans la
             publication du journal? Nos réunions de rédaction sont ouvertes à

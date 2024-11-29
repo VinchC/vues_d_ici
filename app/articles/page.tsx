@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card";
 import { Section } from "../_components/utils/Section";
-import { ARTICLES, CATEGORIES } from "../data/data";
+import { ARTICLES, CATEGORIES } from "../../data/data";
 import { ArticleCard } from "../_components/[Articles]/ArticleCard";
 import { Spacing } from "../_components/utils/Spacing";
 import { useState } from "react";
