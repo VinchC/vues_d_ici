@@ -15,7 +15,7 @@ export default function Membership() {
     <>
       <button
         onClick={onButtonClick}
-        className="categoryLink mt-4"
+        className="categoryLink"
       >
         Télécharger le bulletin d&apos;adhésion
       </button>

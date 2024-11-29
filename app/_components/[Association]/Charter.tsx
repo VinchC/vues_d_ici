@@ -30,7 +30,7 @@ export default function Charter(props: CharterProps) {
         <p className="charteParagraph">{props.title}</p>
         <span
           id={`icon-${props.id}`}
-          className="ttransition-transform duration-300"
+          className="transition-transform duration-300"
         >
           {open ? <UpAccordionIcon /> : <DownAccordionIcon />}
         </span>
