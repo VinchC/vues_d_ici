@@ -8,6 +8,7 @@ import {
   ArticleProps,
   CharterProps,
   FormProps,
+  JournalProps,
 } from "../app/types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
@@ -17,6 +18,243 @@ import { GoogleIcon } from "../app/_components/icons/GoogleIcon";
 import { InstagramIcon } from "../app/_components/icons/InstagramIcon";
 import { HelloAssoIcon } from "../app/_components/icons/HelloAssoIcon";
 import { AssociationProps } from "../app/types";
+
+export const JOURNALS: JournalProps[] = [
+  {
+    id: 1,
+    title: "nov.-déc. 2021",
+    createdAt: "1er novembre 2021",
+    content: [
+      {
+        id: 1,
+        categoryName: "Actus et initiatives... pp. 4-6",
+        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+      },
+      {
+        id: 2,
+        categoryName: "Le dossier... pp. 7-13",
+        text: [
+          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+        ],
+      },
+      {
+        id: 3,
+        categoryName: "Rencontre... p. 14",
+        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+      },
+      {
+        id: 4,
+        categoryName: "Mémoire... p. 15",
+        text: ["Quand Belleville intégra Paris"],
+      },
+      {
+        id: 5,
+        categoryName: "Lecture et Agenda... p. 15",
+        text: ["Le poète Jean-Luc Evens"],
+      },
+      {
+        id: 6,
+        categoryName: "Jeux... p. 16",
+        text: ["Photos énigmes"],
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "mai-juin 2022",
+    createdAt: "1er mai 2022",
+    content: [
+      {
+        id: 1,
+        categoryName: "Actus et initiatives... pp. 4-6",
+        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+      },
+      {
+        id: 2,
+        categoryName: "Le dossier... pp. 7-13",
+        text: [
+          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+        ],
+      },
+      {
+        id: 3,
+        categoryName: "Rencontre... p. 14",
+        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+      },
+      {
+        id: 4,
+        categoryName: "Mémoire... p. 15",
+        text: ["Quand Belleville intégra Paris"],
+      },
+      {
+        id: 5,
+        categoryName: "Lecture et Agenda... p. 15",
+        text: ["Le poète Jean-Luc Evens"],
+      },
+      {
+        id: 6,
+        categoryName: "Jeux... p. 16",
+        text: ["Photos énigmes"],
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "nov.-déc. 2022",
+    createdAt: "1er novembre 2022",
+    content: [
+      {
+        id: 1,
+        categoryName: "Actus et initiatives... pp. 4-6",
+        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+      },
+      {
+        id: 2,
+        categoryName: "Le dossier... pp. 7-13",
+        text: [
+          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+        ],
+      },
+      {
+        id: 3,
+        categoryName: "Rencontre... p. 14",
+        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+      },
+      {
+        id: 4,
+        categoryName: "Mémoire... p. 15",
+        text: ["Quand Belleville intégra Paris"],
+      },
+      {
+        id: 5,
+        categoryName: "Lecture et Agenda... p. 15",
+        text: ["Le poète Jean-Luc Evens"],
+      },
+      {
+        id: 6,
+        categoryName: "Jeux... p. 16",
+        text: ["Photos énigmes"],
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "mai-juin 2023",
+    createdAt: "1er mai 2023",
+    content: [
+      {
+        id: 1,
+        categoryName: "Actus et initiatives... pp. 4-6",
+        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+      },
+      {
+        id: 2,
+        categoryName: "Le dossier... pp. 7-13",
+        text: [
+          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+        ],
+      },
+      {
+        id: 3,
+        categoryName: "Rencontre... p. 14",
+        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+      },
+      {
+        id: 4,
+        categoryName: "Mémoire... p. 15",
+        text: ["Quand Belleville intégra Paris"],
+      },
+      {
+        id: 5,
+        categoryName: "Lecture et Agenda... p. 15",
+        text: ["Le poète Jean-Luc Evens"],
+      },
+      {
+        id: 6,
+        categoryName: "Jeux... p. 16",
+        text: ["Photos énigmes"],
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "déc. 2023-jan. 2024",
+    createdAt: "1er décembre 2023",
+    content: [
+      {
+        id: 1,
+        categoryName: "Actus et initiatives... pp. 4-6",
+        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+      },
+      {
+        id: 2,
+        categoryName: "Le dossier... pp. 7-13",
+        text: [
+          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+        ],
+      },
+      {
+        id: 3,
+        categoryName: "Rencontre... p. 14",
+        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+      },
+      {
+        id: 4,
+        categoryName: "Mémoire... p. 15",
+        text: ["Quand Belleville intégra Paris"],
+      },
+      {
+        id: 5,
+        categoryName: "Lecture et Agenda... p. 15",
+        text: ["Le poète Jean-Luc Evens"],
+      },
+      {
+        id: 6,
+        categoryName: "Jeux... p. 16",
+        text: ["Photos énigmes"],
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "mai-juil. 2024",
+    createdAt: "1er mai 2024",
+    content: [
+      {
+        id: 1,
+        categoryName: "Actus et initiatives... pp. 4-6",
+        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+      },
+      {
+        id: 2,
+        categoryName: "Le dossier... pp. 7-13",
+        text: [
+          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+        ],
+      },
+      {
+        id: 3,
+        categoryName: "Rencontre... p. 14",
+        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+      },
+      {
+        id: 4,
+        categoryName: "Mémoire... p. 15",
+        text: ["Quand Belleville intégra Paris"],
+      },
+      {
+        id: 5,
+        categoryName: "Lecture et Agenda... p. 15",
+        text: ["Le poète Jean-Luc Evens"],
+      },
+      {
+        id: 6,
+        categoryName: "Jeux... p. 16",
+        text: ["Photos énigmes"],
+      },
+    ],
+  },
+];
 
 export const FORM_FIELDS: FormProps[] = [
   {

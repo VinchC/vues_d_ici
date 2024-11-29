@@ -1,9 +1,28 @@
+export type JournalProps = {
+  id: number;
+  title: string;
+  createdAt: string;
+  content: Array<{ id: number; categoryName: string; text: Array<string> }>;
+};
+
+export type ArticleProps = {
+  id: number;
+  picture: string;
+  alt: string;
+  title: string;
+  chapeau: string;
+  text?: string;
+  createdAt: string;
+  categoryId: number;
+  newspaperId: number;
+};
+
 export type FormProps = {
   id: number;
   title: string;
   fieldName: string;
   autoComplete: string;
-}
+};
 
 export type CharterProps = {
   id: number;
@@ -56,18 +75,6 @@ export type CarouselPictureProps = {
   alt: string;
   title: string;
   data_twe_carousel_active?: string | undefined;
-};
-
-export type ArticleProps = {
-  id: number;
-  picture: string;
-  alt: string;
-  title: string;
-  chapeau: string;
-  text?: string;
-  createdAt: string;
-  categoryId: number;
-  newspaperId: number;
 };
 
 export type AssociationProps = {

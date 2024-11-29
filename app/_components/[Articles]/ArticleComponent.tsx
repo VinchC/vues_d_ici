@@ -3,8 +3,7 @@ import { ArticleProps } from "@/app/types";
 import { Card } from "@/components/ui/card";
 
 export const ArticleComponent = (props: ArticleProps) => {
-  console.log(props);
-
+  
   return (
     <>
       <section className="flex flex-col gap-0">
