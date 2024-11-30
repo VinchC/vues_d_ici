@@ -1,6 +1,6 @@
 "use client";
 
-import { Summary } from "@/app/_components/[Journal]/Summary";
+import { Summary } from "@/app/_components/[Journal]/JournalCard";
 import { Section } from "@/app/_components/utils/Section";
 import { Spacing } from "@/app/_components/utils/Spacing";
 import { JOURNALS } from "@/data/data";

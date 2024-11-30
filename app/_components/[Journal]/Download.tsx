@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Download() {
+export default function Download(id: any) {
   const onButtonClick = () => {
     // const pdfUrl = `vues-dici-${id.id}.pdf`;
     const pdfUrl = "bulletin.pdf";
