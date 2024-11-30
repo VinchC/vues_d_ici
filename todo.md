@@ -1,5 +1,7 @@
 ## Journal page to implement
 
+## Serach journal in content.text
+
 ## Refacto CSS
 
 ## Carousel picture to change
