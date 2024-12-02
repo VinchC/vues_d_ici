@@ -13,7 +13,7 @@ export default function AssociationPage() {
       <Spacing size="sm" />
       <Section className="section">
         <Card className="cardBase">
-          <h2 className="h2Title">L&apos;association Vues d&apos;ici</h2>
+          <h2>L&apos;association Vues d&apos;ici</h2>
           <p className="paragraph">
             Le journal de quartier Vues d’ici est une publication locale,
             indépendante et gratuite, mise en place bénévolement par les

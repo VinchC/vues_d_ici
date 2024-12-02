@@ -14,7 +14,7 @@ export default function ContactPage() {
       <Spacing size="sm" />
       <Section className="section">
         <Card className="cardBase">
-          <h2 className="h2Title">Nous contacter</h2>
+          <h2>Nous contacter</h2>
           <p className="paragraph">
             Vous avez une question, voulez adhérer au journal ou nous partager
             un évenement, une info?

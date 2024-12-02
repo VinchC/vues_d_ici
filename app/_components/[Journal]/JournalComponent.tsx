@@ -7,7 +7,7 @@ export const JournalComponent = (props: JournalProps) => {
     <>
       <section className="flex flex-col gap-0">
         <Card className="p-4 gap-2 w-full m-0">
-          <h2 className="h2Title">
+          <h2>
             #{props.id} - N° de {props.title}
           </h2>
           <p className="paragraph">{props.chapeau}</p>

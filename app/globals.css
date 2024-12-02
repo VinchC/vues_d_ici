@@ -61,11 +61,11 @@ body {
 
   /* ---------------------------------Text--------------------------------- */
 
-  .h1Title {
+  h1 {
     @apply spacing text-lg max-sm:leading-6 max-sm:text-sm font-bold text-background;
   }
 
-  .h2Title {
+  h2 {
     @apply text-2xl max-sm:text-lg font-semibold;
   }
 

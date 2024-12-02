@@ -7,7 +7,7 @@ export const BackTheJournal = () => {
     <>
       <Section className="section">
         <Card className="cardBase">
-          <h2 className="h2Title">Soutenir le journal</h2>
+          <h2>Soutenir le journal</h2>
           <p className="paragraph">
             Vous aimez l&apos;initiative et souhaitez investir dans Vues
             d&apos;Ici ?
@@ -18,10 +18,7 @@ export const BackTheJournal = () => {
             l&apos;équipe de rédaction !
           </p>
           <div className="flex justify-evenly">
-            <Link
-              href="/association#nous-soutenir"
-              className="largeButton"
-            >
+            <Link href="/association#nous-soutenir" className="largeButton">
               Nous soutenir
             </Link>
             <Link href="/contact" className="largeButton">

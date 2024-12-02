@@ -18,7 +18,7 @@ export const Header = () => {
         <nav className="flex">
           <div>
             <Link href="/">
-              <h1 className="h1Title">Vues d&apos;ici - Journal de quartier</h1>
+              <h1>Vues d&apos;ici - Journal de quartier</h1>
             </Link>
           </div>
           <div className="flex-1" />

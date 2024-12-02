@@ -1,6 +1,6 @@
-## Journal page to implement
+## merge Journals and Articles in one single page
 
-## Serach journal in content.text
+## Search journal in content.text
 
 ## Refacto CSS
 

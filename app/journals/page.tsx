@@ -15,7 +15,7 @@ export default function JournalsPage() {
       <Spacing size="sm" />
       <Section className="section">
         <Card className="cardBase">
-          <h2 className="h2Title">Nos journaux</h2>
+          <h2>Nos journaux</h2>
           <p className="paragraph">Rechercher le contenu d&apos;un journal</p>
           <Search search={search} handleSearchUpdate={setSearch} />
           <div className="lastArticleGrid">

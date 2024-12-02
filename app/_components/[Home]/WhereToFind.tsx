@@ -12,7 +12,7 @@ export const WhereToFind = () => {
       <div id="nous-trouver">
         <Section className="section">
           <Card className="cardBase">
-            <h2 className="h2Title">Où trouver le journal ?</h2>
+            <h2>Où trouver le journal ?</h2>
             <p className="paragraph">
               A chaque parution, vous pouvez vous servir gratuitement dans un
               des lieux répartis sur le quartier. Les points de collecte
