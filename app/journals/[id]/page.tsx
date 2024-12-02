@@ -16,8 +16,10 @@ export default function JournalDetailPage(req: any) {
     <>
       <Spacing size="sm" />
       <Section className="section">
-      <JournalComponent {...journal} />
-      <JournalArticles {...journal} />
+        <JournalComponent {...journal} />
+      </Section>
+      <Section className="section">
+        <JournalArticles {...journal} />
       </Section>
     </>
   );

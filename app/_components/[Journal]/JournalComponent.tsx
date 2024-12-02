@@ -6,7 +6,7 @@ export const JournalComponent = (props: JournalProps) => {
   return (
     <>
       <section className="flex flex-col gap-0">
-        <Card className="p-4 gap-2 w-full rounded-b-none m-0">
+        <Card className="p-4 gap-2 w-full m-0">
           <h2 className="h2Title">
             #{props.id} - N° de {props.title}
           </h2>
@@ -16,7 +16,9 @@ export const JournalComponent = (props: JournalProps) => {
               <ul>
                 {props.content.map((e, index) => (
                   <>
-                    <li className="font-bold" key={index}>{e.categoryName}</li>
+                    <li className="font-bold" key={index}>
+                      {e.categoryName}
+                    </li>
                     <ul className="listStyle">
                       {e.text.map((f, index) => (
                         <li className="text" key={index}>
