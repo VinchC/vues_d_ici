@@ -14,7 +14,7 @@ export const JournalArticles = (props: JournalProps) => {
       <section className="flex flex-col gap-0">
         <Card className="p-4 gap-2">
           <h2>Dans cette édition</h2>
-          <div className="lastArticleGrid">
+          <div className="articlesGrid">
             {articlesJournal
               .sort((a, b) => b.id - a.id)
               .map((articleJournal, index) => (

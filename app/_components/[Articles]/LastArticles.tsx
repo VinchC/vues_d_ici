@@ -10,7 +10,7 @@ export const LastArticles = () => {
       <Section className="section justify-center">
         <Card className="p-4 gap-2">
           <h2>Nos derniers articles</h2>
-          <div className="lastArticleGrid">
+          <div className="articlesGrid">
             {ARTICLES.sort((a, b) => b.id - a.id)
               .slice(0, 6)
               .map((article, index) => (

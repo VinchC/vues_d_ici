@@ -18,7 +18,7 @@ export default function JournalsPage() {
           <h2>Nos journaux</h2>
           <p className="paragraph">Rechercher le contenu d&apos;un journal</p>
           <Search search={search} handleSearchUpdate={setSearch} />
-          <div className="lastArticleGrid">
+          <div className="articlesGrid">
             {JOURNALS.filter((journal) =>
               journal.title.toLowerCase().includes(search.toLowerCase())
             )

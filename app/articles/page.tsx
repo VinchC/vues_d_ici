@@ -26,7 +26,7 @@ export default function ArticlesPage() {
               </button>
             ))}
           </div>
-          <div className="lastArticleGrid">
+          <div className="articlesGrid">
             {ARTICLES.filter(
               (article) =>
                 article.title.toLowerCase().includes(search.toLowerCase()) ||

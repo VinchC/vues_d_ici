@@ -34,7 +34,7 @@ body {
   .cardBase {
     @apply p-4 gap-2;
   }
-  .lastArticleGrid {
+  .articlesGrid {
     @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 spacingMedium;
   }
   .articleCard {
