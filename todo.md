@@ -1,8 +1,8 @@
 ## merge Journals and Articles in one single page
 
-## Search journal in content.text
+## limit navigation between journals to existing journals
 
-## Refacto CSS
+## Search journal in content.text
 
 ## Carousel picture to change
 

@@ -21,6 +21,14 @@ export const JournalArticles = (props: JournalProps) => {
                 <ArticleCard key={index} {...articleJournal} />
               ))}
           </div>
+          <div className="flex justify-between">
+            <Link href={`/journals/${props.id - 1}`} className="largeButton">
+              Edition précédente
+            </Link>
+            <Link href={`/journals/${props.id + 1}`} className="largeButton">
+              Edition suivante
+            </Link>
+          </div>
         </Card>
       </section>
     </>
