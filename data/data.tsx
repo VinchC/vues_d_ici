@@ -23,6 +23,10 @@ export const JOURNALS: JournalProps[] = [
   {
     id: 1,
     title: "nov.-déc. 2021",
+    picture: distribution.src,
+    alt: "Journal n°1",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er novembre 2021",
     content: [
       {
@@ -62,6 +66,10 @@ export const JOURNALS: JournalProps[] = [
   {
     id: 2,
     title: "mai-juin 2022",
+    picture: distribution.src,
+    alt: "Journal n°2",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er mai 2022",
     content: [
       {
@@ -101,6 +109,10 @@ export const JOURNALS: JournalProps[] = [
   {
     id: 3,
     title: "nov.-déc. 2022",
+    picture: distribution.src,
+    alt: "Journal n°3",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er novembre 2022",
     content: [
       {
@@ -140,6 +152,10 @@ export const JOURNALS: JournalProps[] = [
   {
     id: 4,
     title: "mai-juin 2023",
+    picture: distribution.src,
+    alt: "Journal n°4",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er mai 2023",
     content: [
       {
@@ -179,6 +195,10 @@ export const JOURNALS: JournalProps[] = [
   {
     id: 5,
     title: "déc. 2023-jan. 2024",
+    picture: distribution.src,
+    alt: "Journal n°5",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er décembre 2023",
     content: [
       {
@@ -218,6 +238,10 @@ export const JOURNALS: JournalProps[] = [
   {
     id: 6,
     title: "mai-juil. 2024",
+    picture: distribution.src,
+    alt: "Journal n°6",
+    chapeau:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er mai 2024",
     content: [
       {

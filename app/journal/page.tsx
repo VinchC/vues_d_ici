@@ -8,7 +8,7 @@ import { useState } from "react";
 import Search from "../_components/utils/Search";
 import { JournalCard } from "../_components/[Journal]/JournalCard";
 
-export default function JournalPage() {
+export default function JournalsPage() {
   const [search, setSearch] = useState("");
   return (
     <>

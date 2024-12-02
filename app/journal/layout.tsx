@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Nos journaux",
 };
 
-export default function ArticlesPageLayout({
+export default function JournalsPageLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

@@ -8,7 +8,7 @@ import { Spacing } from "../_components/utils/Spacing";
 import { useState } from "react";
 import Search from "../_components/utils/Search";
 
-export default function ArticlePage() {
+export default function ArticlesPage() {
   const [search, setSearch] = useState("");
   return (
     <>

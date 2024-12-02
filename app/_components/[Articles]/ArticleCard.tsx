@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const ArticleCard = (props: ArticleProps) => {
   return (
-    <div className="articleCard w-80 h-160">
+    <div className="articleCard">
       <img
         src={props.picture}
         alt={props.alt}

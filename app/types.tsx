@@ -1,6 +1,9 @@
 export type JournalProps = {
   id: number;
   title: string;
+  picture: string;
+  alt: string;
+  chapeau: string;
   createdAt: string;
   content: Array<{ id: number; categoryName: string; text: Array<string> }>;
 };
