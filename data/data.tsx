@@ -241,7 +241,7 @@ export const JOURNALS: JournalProps[] = [
     picture: distribution.src,
     alt: "Journal n°6",
     chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...bobo",
     createdAt: "1er mai 2024",
     content: [
       {
