@@ -9,6 +9,10 @@ export const JournalArticles = (props: JournalProps) => {
   const articlesJournal = ARTICLES.filter(
     (article: { newspaperId: number }) => article.newspaperId === props.id
   );
+
+  const minIndex = 1;
+  const maxIndex = 6;
+  // console.log(maxIndex);
   return (
     <>
       <section className="flex flex-col gap-0">
@@ -22,12 +26,20 @@ export const JournalArticles = (props: JournalProps) => {
               ))}
           </div>
           <div className="flex justify-between">
-            <Link href={`/journals/${props.id - 1}`} className="largeButton">
-              Edition précédente
-            </Link>
-            <Link href={`/journals/${props.id + 1}`} className="largeButton">
-              Edition suivante
-            </Link>
+            {props.id - 1 >= minIndex ? (
+              <Link href={`/journals/${props.id - 1}`} className="largeButton">
+                Edition précédente
+              </Link>
+            ) : (
+              <div></div>
+            )}
+            {props.id + 1 <= maxIndex ? (
+              <Link href={`/journals/${props.id + 1}`} className="largeButton">
+                Edition suivante
+              </Link>
+            ) : (
+              <div></div>
+            )}
           </div>
         </Card>
       </section>
