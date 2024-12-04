@@ -8,10 +8,13 @@ import { JournalCard } from "../_components/[Journal]/JournalCard";
 import { Spacing } from "../_components/utils/Spacing";
 import { useState } from "react";
 import Search from "../_components/utils/Search";
+import { Tab, initTWE } from "tw-elements";
 
 export default function ArticlesPage() {
   const [search, setSearch] = useState("");
   const [displayArticles, setDisplayArticles] = useState(true);
+
+  initTWE({ Tab });
 
   const toggleContent = () => {
     return displayArticles
@@ -23,41 +26,64 @@ export default function ArticlesPage() {
   return (
     <>
       <Spacing size="sm" />
-      <button className="largeButton" onClick={toggleContent}>
-        {displayArticles ? "Afficher les journaux" : "Afficher les articles"}
-      </button>
+
       {displayArticles ? (
-        <Section className="section">
-          <Card className="cardBase">
-            <h2>Nos articles</h2>
-            <p className="paragraph">Rechercher le contenu d&apos;un article</p>
-            <Search search={search} handleSearchUpdate={setSearch} />
-            <p className="paragraph">Filtrer par catégorie</p>
-            <div className="footerAndCategories">
-              {CATEGORIES.map((category, index) => (
-                <button key={index} className="categoryLink">
-                  {category.title}
+        <>
+          <Section className="section">
+            <Card className="cardBase">
+            <div className="flex justify-between items-center">
+                <h2>Nos articles</h2>
+                <button className="largeButton" onClick={toggleContent}>
+                  {displayArticles
+                    ? "Afficher les journaux"
+                    : "Afficher les articles"}
                 </button>
-              ))}
-            </div>
-            <div className="articlesGrid">
-              {ARTICLES.filter(
-                (article) =>
-                  article.title.toLowerCase().includes(search.toLowerCase()) ||
-                  article.text?.toLowerCase().includes(search.toLowerCase()) ||
-                  article.chapeau?.toLowerCase().includes(search.toLowerCase())
-              )
-                .sort((a, b) => b.id - a.id)
-                .map((article, index) => (
-                  <ArticleCard key={index} {...article} />
+              </div>
+
+              <p className="paragraph">
+                Rechercher le contenu d&apos;un article
+              </p>
+              <Search search={search} handleSearchUpdate={setSearch} />
+              <p className="paragraph">Filtrer par catégorie</p>
+              <div className="footerAndCategories">
+                {CATEGORIES.map((category, index) => (
+                  <button key={index} className="categoryLink">
+                    {category.title}
+                  </button>
                 ))}
-            </div>
-          </Card>
-        </Section>
+              </div>
+              <div className="articlesGrid">
+                {ARTICLES.filter(
+                  (article) =>
+                    article.title
+                      .toLowerCase()
+                      .includes(search.toLowerCase()) ||
+                    article.text
+                      ?.toLowerCase()
+                      .includes(search.toLowerCase()) ||
+                    article.chapeau
+                      ?.toLowerCase()
+                      .includes(search.toLowerCase())
+                )
+                  .sort((a, b) => b.id - a.id)
+                  .map((article, index) => (
+                    <ArticleCard key={index} {...article} />
+                  ))}
+              </div>
+            </Card>
+          </Section>
+        </>
       ) : (
         <Section className="section">
           <Card className="cardBase">
-            <h2>Nos journaux</h2>
+            <div className="flex justify-between items-center">
+              <h2>Les journaux</h2>
+              <button className="largeButton" onClick={toggleContent}>
+                {displayArticles
+                  ? "Afficher les journaux"
+                  : "Afficher les articles"}
+              </button>
+            </div>
             <p className="paragraph">Rechercher le contenu d&apos;un journal</p>
             <Search search={search} handleSearchUpdate={setSearch} />
             <div className="articlesGrid">
