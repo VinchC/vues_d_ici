@@ -1,3 +1,10 @@
+export type DisplayContentProps = {
+  id: number;
+  title: string;
+  link: string;
+  dataTweNavActive?: string;
+  ariaSelected: boolean;
+};
 export type JournalProps = {
   id: number;
   title: string;

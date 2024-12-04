@@ -9,6 +9,7 @@ import {
   CharterProps,
   FormProps,
   JournalProps,
+  DisplayContentProps,
 } from "../app/types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
@@ -18,6 +19,22 @@ import { GoogleIcon } from "../app/_components/icons/GoogleIcon";
 import { InstagramIcon } from "../app/_components/icons/InstagramIcon";
 import { HelloAssoIcon } from "../app/_components/icons/HelloAssoIcon";
 import { AssociationProps } from "../app/types";
+
+export const DISPLAY_CONTENT: DisplayContentProps[] = [
+  {
+    id: 1,
+    title: "Articles",
+    link: "nos-articles",
+    dataTweNavActive: "data-twe-nav-active",
+    ariaSelected: true,
+  },
+  {
+    id: 2,
+    title: "Journaux",
+    link: "nos-journaux",
+    ariaSelected: false,
+  },
+];
 
 export const JOURNALS: JournalProps[] = [
   {

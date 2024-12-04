@@ -1,5 +1,3 @@
-## limit navigation between journals to existing journals
-
 ## Search journal in content.text
 
 ## Carousel picture to change
