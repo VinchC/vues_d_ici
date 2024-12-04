@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { Section } from "../utils/Section";
 import Link from "next/link";
 import { ArticleCard } from "../[Articles]/ArticleCard";
 import { JournalProps } from "@/app/types";
@@ -12,7 +11,7 @@ export const JournalArticles = (props: JournalProps) => {
 
   const minIndex = 1;
   const maxIndex = 6;
-  // console.log(maxIndex);
+
   return (
     <>
       <section className="flex flex-col gap-0">
