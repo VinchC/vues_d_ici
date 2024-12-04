@@ -484,10 +484,6 @@ export const NAVBAR_LINKS: NavLinkProps[] = [
     title: "Articles",
   },
   {
-    href: "/journals",
-    title: "Journaux",
-  },
-  {
     href: "/#nous-trouver",
     title: "Nous trouver",
   },
