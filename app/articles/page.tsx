@@ -28,7 +28,12 @@ export default function ArticlesPage() {
           <Section className="section">
             <Card className="cardBase">
               <div className="flex justify-between items-center">
-                <h2>Nos articles</h2>
+                <h2>
+                  {" "}
+                  {search
+                    ? `Résultats de recherche pour ${search}`
+                    : "Tous les articles"}
+                </h2>
               </div>
 
               <p className="paragraph">
