@@ -9,7 +9,6 @@ import { useState } from "react";
 import { ARTICLES, CATEGORIES, JOURNALS } from "@/data/data";
 import { ArticleCard } from "../_components/[Articles]/ArticleCard";
 import { JournalCard } from "../_components/[Journal]/JournalCard";
-import { ArticleProps } from "../types";
 
 export default function ArticlesPage() {
   const [search, setSearch] = useState("");

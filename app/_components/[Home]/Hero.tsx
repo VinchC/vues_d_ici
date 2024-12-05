@@ -17,8 +17,8 @@ export const Hero = () => {
             et Place des Fêtes à Paris.
           </p>
           <div className="flex justify-evenly spacingMedium">
-            <Link href="/articles" className="mediumButton">
-              Trouver une édition papier
+            <Link href="/articles#nos-journaux" className="mediumButton">
+              Trouver une édition
             </Link>
             <Link
               href="/association#nous-soutenir"
