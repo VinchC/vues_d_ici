@@ -87,17 +87,25 @@ export default function ArticlesPage() {
                 ))}
               </div>
               <div className="articlesGrid">
-                {category
-                  ? articlesByCategory
+                {category ? (
+                  articlesByCategory.length > 0 ? (
+                    articlesByCategory
                       .sort((a, b) => b.id - a.id)
                       .map((article, index) => (
                         <ArticleCard key={index} {...article} />
                       ))
-                  : articles
-                      .sort((a, b) => b.id - a.id)
-                      .map((article, index) => (
-                        <ArticleCard key={index} {...article} />
-                      ))}
+                  ) : (
+                    <p>Aucun résultat</p>
+                  )
+                ) : articles.length > 0 ? (
+                  articles
+                    .sort((a, b) => b.id - a.id)
+                    .map((article, index) => (
+                      <ArticleCard key={index} {...article} />
+                    ))
+                ) : (
+                  <p>Aucun résultat</p>
+                )}
               </div>
             </Card>
           </Section>
