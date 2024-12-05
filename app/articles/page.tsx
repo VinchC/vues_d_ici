@@ -20,13 +20,11 @@ export default function ArticlesPage() {
   );
 
   const articles = ARTICLES.filter(
-    (article) => article.categoryId === category?.id
-  )
-  //   (article) =>
-  //     article.title.toLowerCase().includes(search.toLowerCase()) ||
-  //     article.text?.toLowerCase().includes(search.toLowerCase()) ||
-  //     article.chapeau?.toLowerCase().includes(search.toLowerCase())
-  // );
+    (article) =>
+      article.title.toLowerCase().includes(search.toLowerCase()) ||
+      article.text?.toLowerCase().includes(search.toLowerCase()) ||
+      article.chapeau?.toLowerCase().includes(search.toLowerCase())
+  );
   console.log(category?.id);
   console.log(articles);
 
@@ -89,15 +87,17 @@ export default function ArticlesPage() {
                 ))}
               </div>
               <div className="articlesGrid">
-                {articles.length > 0 ? (
-                  articles
-                    .sort((a, b) => b.id - a.id)
-                    .map((article, index) => (
-                      <ArticleCard key={index} {...article} />
-                    ))
-                ) : (
-                  <p className="paragraph">Aucun résultat</p>
-                )}
+                {category
+                  ? articlesByCategory
+                      .sort((a, b) => b.id - a.id)
+                      .map((article, index) => (
+                        <ArticleCard key={index} {...article} />
+                      ))
+                  : articles
+                      .sort((a, b) => b.id - a.id)
+                      .map((article, index) => (
+                        <ArticleCard key={index} {...article} />
+                      ))}
               </div>
             </Card>
           </Section>
