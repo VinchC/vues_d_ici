@@ -43,13 +43,13 @@ export const JOURNALS: JournalProps[] = [
     picture: distribution.src,
     alt: "Journal n°1",
     chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+      "Lorem bobobo ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er novembre 2021",
     content: [
       {
         id: 1,
-        categoryName: "Actus et initiatives... pp. 4-6",
-        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+        categoryName: "Actooooos et initiatives... pp. 4-6",
+        text: ["La maison de santé bobobobo", "La médiathèque", "Librairie Boréalia"],
       },
       {
         id: 2,
@@ -91,7 +91,7 @@ export const JOURNALS: JournalProps[] = [
     content: [
       {
         id: 1,
-        categoryName: "Actus et initiatives... pp. 4-6",
+        categoryName: "Actas et initiatives... pp. 4-6",
         text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
       },
       {
@@ -134,7 +134,7 @@ export const JOURNALS: JournalProps[] = [
     content: [
       {
         id: 1,
-        categoryName: "Actus et initiatives... pp. 4-6",
+        categoryName: "pppppppp Actus et initiatives... pp. 4-6",
         text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
       },
       {
@@ -498,7 +498,7 @@ export const SOCIAL_MEDIA: MediaProps[] = [
 export const NAVBAR_LINKS: NavLinkProps[] = [
   {
     href: "/articles",
-    title: "Articles",
+    title: "Publications",
   },
   {
     href: "/#nous-trouver",

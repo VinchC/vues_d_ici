@@ -11,7 +11,6 @@ import { ArticleCard } from "../_components/[Articles]/ArticleCard";
 import { JournalCard } from "../_components/[Journal]/JournalCard";
 
 export default function ArticlesPage() {
-
   const [search, setSearch] = useState("");
 
   return (
@@ -81,8 +80,29 @@ export default function ArticlesPage() {
               </p>
               <Search search={search} handleSearchUpdate={setSearch} />
               <div className="articlesGrid">
-                {JOURNALS.filter((journal) =>
-                  journal.title.toLowerCase().includes(search.toLowerCase())
+                {JOURNALS.filter(
+                  (journal) =>
+                    journal.title
+                      .toLowerCase()
+                      .includes(search.toLowerCase()) ||
+                    journal.chapeau
+                      .toLowerCase()
+                      .includes(search.toLowerCase()) ||
+                    journal.content.find((category) =>
+                      category.categoryName
+                        .toLowerCase()
+                        .includes(search.toLowerCase())
+                    )
+                  // ||
+                  // journal.content
+                  // .map((e, index) => (e.text.find((f) => f.text2.toLowerCase()
+                  // .includes(search.toLowerCase()))))
+                  // ||
+                  // journal.content.find((e) =>
+                  //   e.text.map((i, index) =>
+                  //     i.text2.toLowerCase().includes(search.toLowerCase())
+                  //   )
+                  // )
                 )
                   .sort((a, b) => b.id - a.id)
                   .map((journal, index) => (

@@ -112,7 +112,7 @@ body {
     @apply navLink bg-tertiary hover:bg-tertiary/60 text-black text-xs h-8 w-32 border-background;
   }
   .categoryLink {
-    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32 border-background;
+    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32 border-foreground;
   }
   .button {
     @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-8 spacingMedium;
@@ -141,7 +141,7 @@ body {
     @apply bg-accent/20 hover:bg-accent/50 transition-colors;
   }
   .styledBorder {
-    @apply border-2 rounded-lg;
+    @apply border-2 rounded-lg border-white;
   }
   .footerAndCategories {
     @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center spacingMedium;
