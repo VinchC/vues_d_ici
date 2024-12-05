@@ -9,16 +9,25 @@ import { useState } from "react";
 import { ARTICLES, CATEGORIES, JOURNALS } from "@/data/data";
 import { ArticleCard } from "../_components/[Articles]/ArticleCard";
 import { JournalCard } from "../_components/[Journal]/JournalCard";
+import { CategoryProps } from "../types";
 
 export default function ArticlesPage() {
   const [search, setSearch] = useState("");
+  const [category, setCategory] = useState<null | CategoryProps>(null);
+
+  const articlesByCategory = ARTICLES.filter(
+    (article) => article.categoryId === category?.id
+  );
 
   const articles = ARTICLES.filter(
-    (article) =>
-      article.title.toLowerCase().includes(search.toLowerCase()) ||
-      article.text?.toLowerCase().includes(search.toLowerCase()) ||
-      article.chapeau?.toLowerCase().includes(search.toLowerCase())
-  );
+    (article) => article.categoryId === category?.id
+  )
+  //   (article) =>
+  //     article.title.toLowerCase().includes(search.toLowerCase()) ||
+  //     article.text?.toLowerCase().includes(search.toLowerCase()) ||
+  //     article.chapeau?.toLowerCase().includes(search.toLowerCase())
+  // );
+  console.log(category?.id);
   console.log(articles);
 
   const journals = JOURNALS.filter(
@@ -70,7 +79,11 @@ export default function ArticlesPage() {
               <p className="paragraph">Filtrer par catégorie</p>
               <div className="footerAndCategories">
                 {CATEGORIES.map((category, index) => (
-                  <button key={index} className="categoryLink">
+                  <button
+                    key={index}
+                    className="categoryLink"
+                    onClick={() => setCategory(category)}
+                  >
                     {category.title}
                   </button>
                 ))}

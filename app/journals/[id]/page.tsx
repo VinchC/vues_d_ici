@@ -13,7 +13,6 @@ export default function JournalDetailPage(req: any) {
   const index = id - 1;
   const maxIndex: number = JOURNALS.length;
   let journal: JournalProps = JOURNALS[index];
-  console.log(maxIndex);
 
   return (
     <>

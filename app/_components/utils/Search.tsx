@@ -1,5 +1,4 @@
 import React from "react";
-// import Form from "next/form";
 import SearchButton from "./SearchButton";
 import SearchFormReset from "./SearchFormReset";
 
@@ -10,7 +9,6 @@ const Search = ({
   search?: string;
   handleSearchUpdate?: any;
 }) => {
-  console.log(search);
   return (
     <form action="" className="relative w-72 paragraph" id="search-form">
       <input
