@@ -27,7 +27,7 @@ export default function Charter(props: CharterProps) {
         }}
         className="w-full flex justify-between py-5"
       >
-        <p className="charteParagraph">{props.title}</p>
+        <h3 className="charteParagraph">{props.title}</h3>
         <span
           id={`icon-${props.id}`}
           className="transition-transform duration-300"

@@ -5,8 +5,26 @@ import {
   MAIN_DISTRIBUTION_PLACES,
   SECONDARY_DISTRIBUTION_PLACES,
 } from "@/data/data";
+import { useState } from "react";
+import UpAccordionIcon from "../icons/UpAccordionIcon";
+import DownAccordionIcon from "../icons/DownAccordionIcon";
 
 export const WhereToFind = () => {
+  const [open, setOpen] = useState(false);
+
+  function toggleAccordion() {
+    const content = document.getElementById("secondary");
+
+    if (content) {
+      if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0";
+        setOpen(false);
+      } else {
+        content.style.maxHeight = content?.scrollHeight + "px";
+        setOpen(true);
+      }
+    }
+  }
   return (
     <>
       <div id="nous-trouver">
@@ -34,19 +52,32 @@ export const WhereToFind = () => {
                 <div className="max-lg:w-64 max-lg:h-64 w-96 h-96 bg-red-500 mt-4"></div>
               </div>
             </div>
-            <h3 className="h3Title">Points de collecte secondaires</h3>
-            <div className="grid grid-cols-2 max-sm:grid-cols-1">
+            <button
+              onClick={() => {
+                toggleAccordion(), setOpen;
+              }}
+              className="w-full flex justify-between"
+            >
+              <h3 className="h3Title">Points de collecte secondaires</h3>
+              <span className="transition-transform duration-300">
+                {open ? <UpAccordionIcon /> : <DownAccordionIcon />}
+              </span>
+            </button>
+            <div
+              id="secondary"
+              className="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+            >
               {SECONDARY_DISTRIBUTION_PLACES.map((place, index) => (
                 <Link key={index} href="/">
                   <p className="text">{place.business_name}</p>
                 </Link>
               ))}
+              <p className="paragraph">
+                <strong>
+                  Et plein d’autres commerces, cafés et équipements !
+                </strong>
+              </p>
             </div>
-            <p className="paragraph">
-              <strong>
-                Et plein d’autres commerces, cafés et équipements !
-              </strong>
-            </p>
           </Card>
         </Section>
       </div>
