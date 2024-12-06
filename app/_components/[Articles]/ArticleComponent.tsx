@@ -5,7 +5,9 @@ import { CATEGORIES } from "@/data/data";
 import Link from "next/link";
 
 export const ArticleComponent: any = (props: ArticleProps) => {
-  let category = CATEGORIES.filter((e) => props.categoryId === e.id).map((e) => e.title);
+  let category = CATEGORIES.filter((e) => props.categoryId === e.id).map(
+    (e) => e.title
+  );
 
   console.log(category);
 
@@ -13,17 +15,21 @@ export const ArticleComponent: any = (props: ArticleProps) => {
     <>
       <section className="flex flex-col gap-0">
         <Card className="p-4 gap-2 w-full rounded-b-none m-0">
-          <h2>{props.title}</h2>
-          <button className="categoryLink spacingMedium">
-            {category}
-          </button>
-          <p className="text-xs italic spacing">Publié le {props.createdAt}</p>
-          <Link
-            href={`/journals/${props.newspaperId}`}
-            className="mediumButton"
-          >
-            Lire le journal
-          </Link>
+          <div className="flex justify-between items-center">
+            <div>
+              <h2>{props.title}</h2>
+              <button className="categoryLink spacingMedium">{category}</button>
+              <p className="text-xs italic spacing">
+                Publié le {props.createdAt}
+              </p>
+            </div>
+            <Link
+              href={`/journals/${props.newspaperId}`}
+              className="mediumButton"
+            >
+              Lire le journal
+            </Link>{" "}
+          </div>
         </Card>
         <img src={props.picture} alt={props.alt} className="m-0 w-full" />
         <Card className="p-4 gap-2 w-full rounded-t-none m-0">
