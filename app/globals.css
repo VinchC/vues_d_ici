@@ -11,21 +11,38 @@ body {
     text-wrap: balance;
   }
 
-  /* ---------------------------------Container--------------------------------- */
+  /* ---------------------------------Spacing--------------------------------- */
+
+  .spacing {
+    @apply mt-2 mb-2;
+  }
+  .spacingMedium {
+    @apply mt-4 mb-4;
+  }
+  div {
+    @apply spacing;
+  }
+
+  /* ---------------------------------Containers--------------------------------- */
+
   .section {
-    @apply flex max-md:flex-col items-center gap-4 mt-4;
+    @apply flex max-md:flex-col justify-center items-center gap-4 spacingMedium max-lg:mt-12;
   }
   .card {
     @apply w-full p-4 flex-col gap-2 styledBorder;
   }
-  .lastArticleGrid {
-    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 mt-8;
+  .cardBase {
+    @apply p-4 gap-2;
+  }
+  .articlesGrid {
+    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 spacingMedium;
   }
   .articleCard {
     @apply flex flex-col gap-4 shadow-md rounded-lg bg-background text-foreground w-72 h-80 max-sm:w-80;
   }
 
   /* ---------------------------------Carousel--------------------------------- */
+
   .carouselSlider {
     @apply absolute bottom-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-red-900 opacity-90 transition-opacity hover:text-black hover:no-underline hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none;
   }
@@ -36,24 +53,32 @@ body {
     @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
   }
   .carouselText {
-    @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-background/30 text-black border-background styledBorder w-60 text-black xs:block;
+    @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-fourth/60 text-black border-background styledBorder w-60 text-black xs:block;
   }
   .transitionDuration {
     @apply duration-1000;
   }
 
-  /* ---------------------------------Texts--------------------------------- */
+  /* ---------------------------------Text--------------------------------- */
+
+  h1 {
+    @apply spacing text-lg max-sm:leading-6 max-sm:text-sm font-bold text-background;
+  }
+
+  h2 {
+    @apply text-2xl max-sm:text-lg font-semibold;
+  }
+
+  .h3Title {
+    @apply spacingMedium text-xl max-sm:text-lg font-semibold;
+  }
 
   .text {
     @apply whitespace-pre-line leading-7 max-lg:text-sm max-sm:text-xs;
   }
 
   .paragraph {
-    @apply text leading-7;
-  }
-
-  .chartText {
-    @apply text leading-none;
+    @apply text leading-7 spacing;
   }
 
   .chapeau {
@@ -64,16 +89,12 @@ body {
     @apply paragraph mx-24 max-lg:mx-12 max-md:mx-6;
   }
 
-  .h2Title {
-    @apply text-2xl font-semibold mt-4;
-  }
-
-  .h3Title {
-    @apply text-lg font-semibold mt-4;
+  .chartText {
+    @apply text leading-none;
   }
 
   .charteParagraph {
-    @apply text font-bold mt-4;
+    @apply text text-left font-bold mt-4;
   }
 
   /* ---------------------------------CTA--------------------------------- */
@@ -91,10 +112,10 @@ body {
     @apply navLink bg-tertiary hover:bg-tertiary/60 text-black text-xs h-8 w-32 border-background;
   }
   .categoryLink {
-    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32 border-background;
+    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32 border-foreground;
   }
   .button {
-    @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-8;
+    @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-8 spacingMedium;
   }
   .mediumButton {
     @apply button w-24 border-foreground;
@@ -105,28 +126,40 @@ body {
   /* ---------------------------------Footer--------------------------------- */
 
   .footer {
-    @apply flex flex-col items-center bg-foreground text-background text-center mt-8;
+    @apply flex flex-col items-center bg-foreground text-background text-center;
   }
 
   .footerButton {
-    @apply rounded-full bg-background text-foreground p-3 uppercase leading-normal shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1;
+    @apply rounded-full bg-background text-foreground px-2 uppercase leading-normal shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1;
   }
   /* ---------------------------------Misc--------------------------------- */
 
   .header {
-    @apply fixed w-full top-0 py-4 h-16 bg-card border-b-[2px] border-background z-50;
+    @apply fixed w-full top-0 h-16 bg-card border-b-[2px] border-background z-50;
   }
   .accent {
     @apply bg-accent/20 hover:bg-accent/50 transition-colors;
   }
   .styledBorder {
-    @apply border-2 rounded-lg;
+    @apply border-2 rounded-lg border-white;
   }
-  .footerAndCategories {
-    @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center mt-4;
+  .displayFooterLinks {
+    @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center spacingMedium;
+  }
+  .displayCategories {
+    @apply grid lg:grid-cols-5 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center spacingMedium;
   }
   .listStyle {
     @apply list-disc px-8;
+  }
+
+  /* ---------------------------------Form--------------------------------- */
+  .inputLabel {
+    @apply block font-semibold;
+  }
+
+  .formField {
+    @apply block w-full rounded-xl border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-700 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6;
   }
 }
 

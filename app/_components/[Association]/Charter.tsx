@@ -25,12 +25,12 @@ export default function Charter(props: CharterProps) {
         onClick={() => {
           toggleAccordion(props.id), setOpen;
         }}
-        className="w-full flex justify-between items-center py-5"
+        className="w-full flex justify-between py-5"
       >
-        <p className="charteParagraph">{props.title}</p>
+        <h3 className="charteParagraph">{props.title}</h3>
         <span
           id={`icon-${props.id}`}
-          className="text-slate-800 transition-transform duration-300"
+          className="transition-transform duration-300"
         >
           {open ? <UpAccordionIcon /> : <DownAccordionIcon />}
         </span>
