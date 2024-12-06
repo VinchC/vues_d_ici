@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nos articles",
+  title: "Nos articles et journaux",
 };
 
 export default function ArticlesPageLayout({

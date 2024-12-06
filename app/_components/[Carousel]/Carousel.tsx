@@ -2,11 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import {
-  CAROUSEL_BUTTONS,
-  CATEGORIES,
-  CAROUSEL_SLIDERS,
-} from "@/app/data/data";
+import { CAROUSEL_BUTTONS, CATEGORIES, CAROUSEL_SLIDERS } from "@/data/data";
 import { useEffect } from "react";
 import CarouselButton from "./CarouselButton";
 import CarouselSlider from "./CarouselSlider";

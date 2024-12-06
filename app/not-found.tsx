@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "./styles/not-found.css";
+import BackToHomeLink from "./_components/utils/BackToHomeLink";
 
 export default function Custom404() {
   return (
@@ -11,11 +12,7 @@ export default function Custom404() {
         </span>
         <span>4</span>
       </section>
-      <div className="link-container">
-        <Link href="/" className="more-link">
-          Back to homepage
-        </Link>
-      </div>
+      <BackToHomeLink />
     </>
   );
 }

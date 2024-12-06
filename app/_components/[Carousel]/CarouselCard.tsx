@@ -1,13 +1,8 @@
+import { CategoryProps } from "@/app/types";
 import Link from "next/link";
 
 /* eslint-disable @next/next/no-img-element */
-export default function CarouselCard(category: {
-  id: number;
-  picture: string;
-  alt: string;
-  title: string;
-  data_twe_carousel_active?: string | undefined;
-}) {
+export default function CarouselCard(category: CategoryProps) {
   return (
     <div
       className="carouselCard"

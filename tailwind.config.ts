@@ -7,10 +7,6 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/tw-elements/js/**/*.js",
-
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/tw-elements/js/**/*.js",
   ],
   theme: {
     fontFamily: {
@@ -43,6 +39,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("tw-elements/plugin.cjs")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tw-elements/plugin.cjs"),
+    require("@tailwindcss/forms"),
+  ],
 };
 export default config;
