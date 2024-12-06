@@ -1,5 +1,7 @@
 "use client";
 
+import Download from "@/app/_components/[Journal]/Download";
+import Download2 from "@/app/_components/[Journal]/Download2";
 import { JournalArticles } from "@/app/_components/[Journal]/JournalArticles";
 import { JournalComponent } from "@/app/_components/[Journal]/JournalComponent";
 import { Section } from "@/app/_components/utils/Section";
@@ -17,6 +19,7 @@ export default function JournalDetailPage(req: any) {
   return (
     <>
       <Spacing size="sm" />
+      <Download2 {...journal} />
       <Section className="section">
         <JournalComponent {...journal} />
       </Section>

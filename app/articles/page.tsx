@@ -25,8 +25,6 @@ export default function ArticlesPage() {
       article.text?.toLowerCase().includes(search.toLowerCase()) ||
       article.chapeau?.toLowerCase().includes(search.toLowerCase())
   );
-  console.log(category?.id);
-  console.log(articles);
 
   const journals = JOURNALS.filter(
     (journal) =>

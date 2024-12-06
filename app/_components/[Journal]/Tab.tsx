@@ -27,7 +27,7 @@ const Tab = () => {
             <li key={index} role="presentation">
               <a
                 href={e.link}
-                className="my-2 rounded-xl block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-bold uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-700/10 focus:isolate focus:border-transparent data-[twe-nav-active]:border-foreground data-[twe-nav-active]:text-foreground dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary dark:data-[twe-nav-active]:border-primary"
+                className="my-2 rounded-xl block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xl font-bold uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-700/10 focus:isolate focus:border-transparent data-[twe-nav-active]:border-foreground data-[twe-nav-active]:text-foreground dark:text-white dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary dark:data-[twe-nav-active]:border-primary"
                 data-twe-toggle="pill"
                 data-twe-target={`#${e.link}`}
                 data-twe-nav-active={e.dataTweNavActive}

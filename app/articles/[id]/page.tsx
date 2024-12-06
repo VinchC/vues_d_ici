@@ -3,15 +3,14 @@
 import { ArticleComponent } from "@/app/_components/[Articles]/ArticleComponent";
 import { Section } from "@/app/_components/utils/Section";
 import { Spacing } from "@/app/_components/utils/Spacing";
+import { ArticleProps } from "@/app/types";
 import { ARTICLES } from "@/data/data";
 
 export default function ArticleDetailPage(req: any) {
-  const id = req.params.id;
+  const id = parseInt(req.params.id);
 
   const index = id - 1;
-  const article = ARTICLES[index];
-
-  console.log(article);
+  let article: ArticleProps = ARTICLES[index];
 
   return (
     <>
