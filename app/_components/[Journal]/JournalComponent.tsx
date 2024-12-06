@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { JournalProps } from "@/app/types";
 import { Card } from "@/components/ui/card";
+import Download from "./Download";
 
 export const JournalComponent = (props: JournalProps) => {
   return (
@@ -11,6 +12,7 @@ export const JournalComponent = (props: JournalProps) => {
             #{props.id} - N° de {props.title}
           </h2>
           <p className="paragraph">{props.chapeau}</p>
+          <Download id={props.id} />
           <div className="flex max-sm:flex-col-reverse max-sm:flex-col items-center max-sm:items-start mb-8">
             <div className="flex-[3] flex-col gap-2">
               <ul>

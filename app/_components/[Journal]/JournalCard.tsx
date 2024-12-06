@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { JournalProps } from "@/app/types";
-import Download from "./Download";
 import Link from "next/link";
 
 export const JournalCard = (props: JournalProps) => {
@@ -18,7 +17,6 @@ export const JournalCard = (props: JournalProps) => {
           <Link href={`/journals/${props.id}`} className="mediumButton">
             Lire le journal
           </Link>
-          <Download id={props.id} />
         </div>
       </div>
     </div>
