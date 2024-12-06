@@ -573,13 +573,6 @@ export const CATEGORIES: CategoryProps[] = [
   },
   {
     id: 5,
-    picture: distribution.src,
-    alt: "Image représentant la catégorie Editions complètes",
-    title: "Editions complètes",
-    href: "/articles?category=",
-  },
-  {
-    id: 6,
     picture: station.src,
     alt: "Image représentant la catégorie Actu du journal",
     title: "Actu du journal",
@@ -714,7 +707,7 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "06/11/2024",
-    categoryId: 6,
+    categoryId: 5,
     newspaperId: 6,
   },
   {
@@ -786,7 +779,7 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "12/11/2024",
-    categoryId: 6,
+    categoryId: 5,
     newspaperId: 6,
   },
   {
@@ -858,7 +851,7 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.`,
     createdAt: "18/11/2024",
-    categoryId: 6,
+    categoryId: 5,
     newspaperId: 6,
   },
 ];
