@@ -31,7 +31,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="footerAndCategories">
+        <div className="displayFooterLinks">
           {FOOTER_LINKS.map((link, index) => (
             <FooterLink key={index} {...link} />
           ))}

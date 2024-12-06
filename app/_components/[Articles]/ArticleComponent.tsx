@@ -9,8 +9,6 @@ export const ArticleComponent: any = (props: ArticleProps) => {
     (e) => e.title
   );
 
-  console.log(category);
-
   return (
     <>
       <section className="flex flex-col gap-0">

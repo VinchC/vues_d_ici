@@ -143,8 +143,11 @@ body {
   .styledBorder {
     @apply border-2 rounded-lg border-white;
   }
-  .footerAndCategories {
+  .displayFooterLinks {
     @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center spacingMedium;
+  }
+  .displayCategories {
+    @apply grid lg:grid-cols-5 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center spacingMedium;
   }
   .listStyle {
     @apply list-disc px-8;

@@ -73,7 +73,7 @@ export default function ArticlesPage() {
               </p>
               <Search search={search} handleSearchUpdate={setSearch} />
               <p className="paragraph">Filtrer par catégorie</p>
-              <div className="footerAndCategories">
+              <div className="displayCategories">
                 {CATEGORIES.map((category, index) => (
                   <button
                     key={index}
@@ -127,7 +127,7 @@ export default function ArticlesPage() {
                 Rechercher le contenu d&apos;un journal
               </p>
               <Search search={search} handleSearchUpdate={setSearch} />
-              <div className="footerAndCategories"></div>
+              <div className="displayCategories"></div>
               <div className="articlesGrid">
                 {journals.length > 0 ? (
                   journals
