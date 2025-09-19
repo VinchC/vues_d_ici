@@ -3,3 +3,5 @@
 ## Search journal in content.text
 
 ## Display article[id] to fix via promise
+
+## Fix Search reset functionality
