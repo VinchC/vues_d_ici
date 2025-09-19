@@ -10,15 +10,15 @@ import Charter from "../_components/[Association]/Charter";
 export default function AssociationPage() {
   return (
     <>
-      <Spacing size="sm" />
+      <Spacing size="md" />
       <Section className="section">
         <Card className="cardBase">
           <h2>L&apos;association Vues d&apos;ici</h2>
           <p className="paragraph">
             Le journal de quartier Vues d’ici est une publication locale,
             indépendante et gratuite, mise en place bénévolement par les
-            habitants des quartiers Belleville, Jourdain, Buttes- Chaumont et
-            Place des Fetes à Paris. L’impression est financée par les
+            habitants des quartiers Belleville, Jourdain, Buttes-Chaumont et
+            Place des Fêtes à Paris. L’impression est financée par les
             cotisations à l’association, les encarts publicitaires et les dons
             libres.
           </p>
@@ -26,7 +26,7 @@ export default function AssociationPage() {
             Vous pouvez nous soutenir de plusieurs façon: en adhérant à
             l’association, en rejoignant l’équipe on en faisant un don.
           </p>
-          <div className="grid grid-cols-2 max-sm:block items-center gap-8">
+          <div className="grid grid-cols-2 max-sm:block items-center gap-8 m-8">
             {ASSOCIATION.map((e, index) => (
               <SupportComponent key={index} {...e} />
             ))}

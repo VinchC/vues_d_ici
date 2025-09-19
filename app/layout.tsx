@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "./styles/globals.css";
 import Providers from "./providers";
 import SkipLink from "./_components/utils/SkipLink";
 import Footer from "./_components/[Footer]/Footer";

@@ -53,7 +53,7 @@ body {
     @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
   }
   .carouselText {
-    @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-fourth/60 text-black border-background styledBorder w-60 text-black xs:block;
+    @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-fourth/60 text-black border-background styledBorder w-60 xs:block;
   }
   .transitionDuration {
     @apply duration-1000;
@@ -66,7 +66,11 @@ body {
   }
 
   h2 {
-    @apply text-2xl max-sm:text-lg font-semibold;
+    @apply text-4xl max-sm:text-lg font-bold;
+  }
+
+  h3 {
+    @apply text-2xl max-sm:text-lg font-bold;
   }
 
   .h3Title {
@@ -74,11 +78,11 @@ body {
   }
 
   .text {
-    @apply whitespace-pre-line leading-7 max-lg:text-sm max-sm:text-xs;
+    @apply whitespace-pre-line leading-5 max-sm:leading-4;
   }
 
   .paragraph {
-    @apply text leading-7 spacing;
+    @apply text spacingMedium text-xs;
   }
 
   .chapeau {
@@ -100,7 +104,7 @@ body {
   /* ---------------------------------CTA--------------------------------- */
 
   .navLink {
-    @apply flex justify-center items-center p-0 text-center styledBorder;
+    @apply flex justify-center items-center text-center styledBorder;
   }
   .navLinkSmall {
     @apply navLink bg-foreground hover:bg-foreground/20 text-background text-sm size-8 border-background;
@@ -112,10 +116,10 @@ body {
     @apply navLink bg-tertiary hover:bg-tertiary/60 text-black text-xs h-8 w-32 border-background;
   }
   .categoryLink {
-    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32 border-foreground;
+    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32;
   }
   .button {
-    @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-8 spacingMedium;
+    @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-16 spacingMedium;
   }
   .mediumButton {
     @apply button w-24 border-foreground;
@@ -141,7 +145,7 @@ body {
     @apply bg-accent/20 hover:bg-accent/50 transition-colors;
   }
   .styledBorder {
-    @apply border-2 rounded-lg border-white;
+    @apply border-2 rounded-lg border-black;
   }
   .displayFooterLinks {
     @apply grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center spacingMedium;
@@ -174,8 +178,10 @@ body {
   --secondary: 360 20% 57%;
   --tertiary: 192 53% 60%;
   --fourth: 56 78% 68%;
+  --fifth: 0 5% 96%;
   --dark: 1 00% 00%;
-  --light: 216 10% 80%;
+  /* --light: 216 10% 80%; */
+  --light: 0 5% 96%;
   --radius: 0.5rem;
 }
 

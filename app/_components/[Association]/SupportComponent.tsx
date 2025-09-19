@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function SupportComponent(props: AssociationProps) {
   return (
-    <div className="flex flex-col justify-around p-4 spacing bg-tertiary rounded-xl border-2 border-background h-64 max-sm:h-48">
-      <h2 className="text-black">{props.title}</h2>
+    <div className="flex flex-col justify-around p-4 bg-fifth rounded-md shadow-xl h-60 max-sm:h-56">
+      <h3 className="text-black">{props.title}</h3>
       <p className="paragraph text-black">{props.text}</p>
       {props.textButton == "Faire un don" ? (
         <Link
