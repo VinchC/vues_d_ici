@@ -13,14 +13,12 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="header">
+  <header className="header">
       <Section className="max-lg:max-w-4xl max-sm:max-w-2xl">
-        <nav className="flex">
-          <div>
+        <nav className="flex mt-4 md:h-16">
             <Link href="/">
-              <h1>Vues d&apos;ici - Journal de quartier</h1>
+              <p className="logo" >Vues d&apos;ici - Journal de quartier</p>
             </Link>
-          </div>
           <div className="flex-1" />
 
           <div className="flex-col">
@@ -40,7 +38,7 @@ export const Header = () => {
               className={
                 !isOpen
                   ? "max-md:invisible"
-                  : "w-[100px] bg-card rounded-sm p-2 mr-0"
+                  : "w-[100px] bg-fifth rounded-xl p-2 mr-0"
               }
             >
               <ul

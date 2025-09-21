@@ -27,17 +27,14 @@ export default function Charter(props: CharterProps) {
         }}
         className="w-full flex justify-between py-5"
       >
-        <h3 className="charteParagraph">{props.title}</h3>
-        <span
-          id={`icon-${props.id}`}
-          className="transition-transform duration-300"
-        >
+        <p className="charteParagraph">{props.title}</p>
+        <span id={`icon-${props.id}`} className="transition-transform">
           {open ? <UpAccordionIcon /> : <DownAccordionIcon />}
         </span>
       </button>
       <div
         id={`content-${props.id}`}
-        className="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        className="max-h-0 overflow-hidden transition-all"
       >
         <ul className="listStyle">
           {props.text.map((e, index) => (

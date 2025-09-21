@@ -22,7 +22,7 @@ const config: Config = {
         secondary: "hsl(var(--secondary))",
         tertiary: "hsl(var(--tertiary))",
         fourth: "hsl(var(--fourth))",
-        fifth: "hsl(var(--fifth))",
+        fifth: "var(--fifth)",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

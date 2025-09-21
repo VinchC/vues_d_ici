@@ -20,16 +20,13 @@ export const Hero = () => {
             <Link href="/articles#nos-journaux" className="mediumButton">
               Trouver une édition
             </Link>
-            <Link
-              href="/association#nous-soutenir"
-              className="mediumButton"
-            >
+            <Link href="/association#nous-soutenir" className="mediumButton">
               Nous soutenir
             </Link>
           </div>
         </div>
         <div className="flex-[2] flex justify-around items-center max-md:m-auto ml-auto">
-          <Carousel />
+          {/* <Carousel /> */}
         </div>
       </Section>
     </>

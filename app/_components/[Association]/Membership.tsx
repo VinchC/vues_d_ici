@@ -12,11 +12,8 @@ export default function Membership() {
   };
   return (
     <>
-      <button
-        onClick={onButtonClick}
-        className="categoryLink"
-      >
-        Télécharger le bulletin d&apos;adhésion
+      <button onClick={onButtonClick} className="categoryLink bg-red-900 ">
+        Télécharger le formulaire
       </button>
     </>
   );

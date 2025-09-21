@@ -51,7 +51,7 @@ export default function ArticlesPage() {
       <Tab />
       <div>
         <div
-          className="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+          className="hidden opacity-100 transition-opacity data-[twe-tab-active]:block"
           id="nos-articles"
           role="tabpanel"
           aria-labelledby="nos-articles"
@@ -109,7 +109,7 @@ export default function ArticlesPage() {
           </Section>
         </div>
         <div
-          className="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+          className="hidden opacity-0 transition-opacity data-[twe-tab-active]:block"
           id="nos-journaux"
           role="tabpanel"
           aria-labelledby="nos-journaux"

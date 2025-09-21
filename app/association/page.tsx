@@ -10,10 +10,9 @@ import Charter from "../_components/[Association]/Charter";
 export default function AssociationPage() {
   return (
     <>
-      <Spacing size="md" />
       <Section className="section">
         <Card className="cardBase">
-          <h2>L&apos;association Vues d&apos;ici</h2>
+          <h1>L&apos;association Vues d&apos;ici</h1>
           <p className="paragraph">
             Le journal de quartier Vues d’ici est une publication locale,
             indépendante et gratuite, mise en place bénévolement par les
@@ -31,9 +30,9 @@ export default function AssociationPage() {
               <SupportComponent key={index} {...e} />
             ))}
           </div>
-          <h3 className="h3Title" id="nous-rejoindre">
+          <h2 className="h3Title" id="nous-rejoindre">
             Nous rejoindre
-          </h3>
+          </h2>
           <p className="paragraph">
             Vous souhaitez vous impliquer de manière plus régulière dans la
             publication du journal? Nos réunions de rédaction sont ouvertes à
@@ -46,7 +45,7 @@ export default function AssociationPage() {
             Contact pub, Maquettiste, Coordinateur de l’impression, Distributeur
             des exemplaires papier, Animateur des réseaux sociaux.
           </p>
-          <h3 className="h3Title">Notre charte</h3>
+          <h2>Notre charte</h2>
           {CHARTER.map((e, index) => (
             <Charter key={index} {...e} />
           ))}

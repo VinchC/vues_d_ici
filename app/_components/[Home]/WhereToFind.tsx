@@ -59,13 +59,13 @@ export const WhereToFind = () => {
               className="w-full flex justify-between"
             >
               <h3 className="h3Title">Points de collecte secondaires</h3>
-              <span className="transition-transform duration-300">
+              <span className="transition-transform">
                 {open ? <UpAccordionIcon /> : <DownAccordionIcon />}
               </span>
             </button>
             <div
               id="secondary"
-              className="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              className="max-h-0 overflow-hidden transition-all"
             >
               {SECONDARY_DISTRIBUTION_PLACES.map((place, index) => (
                 <Link key={index} href="/">

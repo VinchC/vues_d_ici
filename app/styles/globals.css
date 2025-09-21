@@ -19,9 +19,9 @@ body {
   .spacingMedium {
     @apply mt-4 mb-4;
   }
-  div {
+  /* div {
     @apply spacing;
-  }
+  } */
 
   /* ---------------------------------Containers--------------------------------- */
 
@@ -29,7 +29,7 @@ body {
     @apply flex max-md:flex-col justify-center items-center gap-4 spacingMedium max-lg:mt-12;
   }
   .card {
-    @apply w-full p-4 flex-col gap-2 styledBorder;
+    @apply w-full p-4 flex-col gap-2;
   }
   .cardBase {
     @apply p-4 gap-2;
@@ -50,31 +50,25 @@ body {
     @apply mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-red-900 hover:bg-black bg-clip-padding p-0 -indent-[999px] opacity-40 transition-opacity motion-reduce:transition-none;
   }
   .carouselCard {
-    @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity transitionDuration ease-in-out motion-reduce:transition-none;
+    @apply relative -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity motion-reduce:transition-none;
   }
   .carouselText {
     @apply absolute inset-x-[17%] top-1 hidden paragraph text-center bg-fourth hover:bg-fourth/60 text-black border-background styledBorder w-60 xs:block;
-  }
-  .transitionDuration {
-    @apply duration-1000;
   }
 
   /* ---------------------------------Text--------------------------------- */
 
   h1 {
-    @apply spacing text-lg max-sm:leading-6 max-sm:text-sm font-bold text-background;
+    @apply spacing text-4xl max-sm:leading-6 max-sm:text-sm font-bold;
   }
 
   h2 {
-    @apply text-4xl max-sm:text-lg font-bold;
+    @apply text-2xl max-sm:text-sm font-bold spacingMedium;
   }
 
-  h3 {
-    @apply text-2xl max-sm:text-lg font-bold;
-  }
-
-  .h3Title {
-    @apply spacingMedium text-xl max-sm:text-lg font-semibold;
+  h3,
+  .logo {
+    @apply text-xl max-sm:text-sm font-bold;
   }
 
   .text {
@@ -82,7 +76,7 @@ body {
   }
 
   .paragraph {
-    @apply text spacingMedium text-xs;
+    @apply text spacing text-xs;
   }
 
   .chapeau {
@@ -98,34 +92,34 @@ body {
   }
 
   .charteParagraph {
-    @apply text text-left font-bold mt-4;
+    @apply text text-left font-bold spacing;
   }
 
   /* ---------------------------------CTA--------------------------------- */
 
   .navLink {
-    @apply flex justify-center items-center text-center styledBorder;
+    @apply flex justify-center items-center text-center;
   }
   .navLinkSmall {
     @apply navLink bg-foreground hover:bg-foreground/20 text-background text-sm size-8 border-background;
   }
   .navLinkLarge {
-    @apply navLink bg-foreground hover:bg-background/20 text-background text-xs h-8 w-24 border-background;
+    @apply navLink bg-foreground hover:bg-background/20 text-background text-xs h-8 w-24;
   }
   .footerLink {
     @apply navLink bg-tertiary hover:bg-tertiary/60 text-black text-xs h-8 w-32 border-background;
   }
   .categoryLink {
-    @apply navLink bg-fourth hover:bg-fourth/60 text-black text-xs h-8 w-32;
+    @apply navLink rounded-xl text-xs h-8 w-40;
   }
   .button {
-    @apply navLink bg-primary hover:bg-primary/80 text-black text-xs h-16 spacingMedium;
+    @apply navLink hover:bg-primary/80 text-xs h-16 spacingMedium;
   }
   .mediumButton {
-    @apply button w-24 border-foreground;
+    @apply button w-24;
   }
   .largeButton {
-    @apply button w-32 border-background;
+    @apply button w-32;
   }
   /* ---------------------------------Footer--------------------------------- */
 
@@ -134,7 +128,7 @@ body {
   }
 
   .footerButton {
-    @apply rounded-full bg-background text-foreground px-2 uppercase leading-normal shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1;
+    @apply rounded-full bg-background text-foreground px-2 uppercase leading-normal shadow-dark-3 shadow-black/30 transition hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1;
   }
   /* ---------------------------------Misc--------------------------------- */
 
@@ -178,29 +172,20 @@ body {
   --secondary: 360 20% 57%;
   --tertiary: 192 53% 60%;
   --fourth: 56 78% 68%;
-  --fifth: 0 5% 96%;
-  --dark: 1 00% 00%;
-  /* --light: 216 10% 80%; */
-  --light: 0 5% 96%;
+  --fifth: hsl(60, 98%, 49%);
+  --black: #000000;
+  --grey: #f3efef;
   --radius: 0.5rem;
 }
 
 .dark {
-  --background: var(--dark);
-  --foreground: var(--light);
-  --card: var(--light);
-  --card-foreground: var(--dark);
-  --accent: var(--dark);
-  --accent-foreground: var(--light);
+  --background: var(--grey);
+  --foreground: var(--black);
 }
 
 .light {
-  --background: var(--light);
-  --foreground: var(--dark);
-  --card: var(--dark);
-  --card-foreground: var(--light);
-  --accent: var(--light);
-  --accent-foreground: var(--dark);
+  --background: var(--black);
+  --foreground: var(--grey);
 }
 
 @media (prefers-color-scheme: dark) {
