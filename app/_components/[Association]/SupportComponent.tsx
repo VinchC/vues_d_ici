@@ -11,7 +11,7 @@ export default function SupportComponent(props: AssociationProps) {
         <Link
           target="_blank"
           href="https://www.helloasso.com/associations/quartier-vu-d-ici-19-20/collectes/prochain-numero-de-vues-d-ici-nous-avons-besoin-de-vous"
-          className="categoryLink bg-fifth"
+          className="categoryLink bg-gray-300"
         >
           {props.textButton}
         </Link>

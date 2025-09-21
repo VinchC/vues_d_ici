@@ -133,7 +133,7 @@ body {
   /* ---------------------------------Misc--------------------------------- */
 
   .header {
-    @apply fixed w-full top-0 h-16 bg-card border-b-[2px] border-background z-50;
+    @apply fixed w-full top-0 h-16 bg-fifth border-b-[2px] border-background z-50;
   }
   .accent {
     @apply bg-accent/20 hover:bg-accent/50 transition-colors;

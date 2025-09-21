@@ -30,7 +30,7 @@ export default function AssociationPage() {
               <SupportComponent key={index} {...e} />
             ))}
           </div>
-          <h2 className="h3Title" id="nous-rejoindre">
+          <h2 id="nous-rejoindre">
             Nous rejoindre
           </h2>
           <p className="paragraph">

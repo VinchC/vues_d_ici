@@ -38,7 +38,7 @@ export default function RootLayout({
 
         <Providers>
           <Header />
-          <main className="mt-20 min-lg:mt-10">{children}</main>
+          <main className="mt-20">{children}</main>
           <Footer />
         </Providers>
       </body>

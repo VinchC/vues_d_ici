@@ -13,12 +13,12 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-  <header className="header">
+    <header className="header">
       <Section className="max-lg:max-w-4xl max-sm:max-w-2xl">
         <nav className="flex mt-4 md:h-16">
-            <Link href="/">
-              <p className="logo" >Vues d&apos;ici - Journal de quartier</p>
-            </Link>
+          <Link href="/">
+            <p className="logo">Vues d&apos;ici - Journal de quartier</p>
+          </Link>
           <div className="flex-1" />
 
           <div className="flex-col">

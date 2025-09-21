@@ -12,7 +12,7 @@ export default function Membership() {
   };
   return (
     <>
-      <button onClick={onButtonClick} className="categoryLink bg-red-900 ">
+      <button onClick={onButtonClick} className="categoryLink bg-gray-300">
         Télécharger le formulaire
       </button>
     </>
